@@ -1412,6 +1412,438 @@ def _render_offer_cards(cat, color, columns=4):
     )
 
 
+_PRICE_DASHBOARD_TEMPLATE = """<!DOCTYPE html>
+<html lang="vi">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Giá RAM/SSD/Laptop</title>
+<script src="https://cdn.jsdelivr.net/npm/chart.js@4/dist/chart.umd.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/chartjs-adapter-date-fns@3/dist/chartjs-adapter-date-fns.bundle.min.js"></script>
+<style>
+  :root {
+    color-scheme: light dark;
+    --bg: #f7f7f8; --surface: #ffffff; --border: #e4e4e7;
+    --text: #18181b; --muted: #71717a; --faint: #a1a1aa;
+    --accent: #4338ca; --accent-soft: #e0e7ff; --accent-text: #4338ca;
+    --positive: #16a34a; --negative: #dc2626; --grid-line: #f0f0f2;
+    --row-hover: #f4f4f5;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root {
+      --bg: #0b0b0d; --surface: #17171a; --border: #2a2a2e;
+      --text: #f4f4f5; --muted: #a1a1aa; --faint: #71717a;
+      --accent: #818cf8; --accent-soft: #312e81; --accent-text: #a5b4fc;
+      --positive: #4ade80; --negative: #f87171; --grid-line: #232326;
+      --row-hover: #1f1f23;
+    }
+  }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0; background: var(--bg); color: var(--text);
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    -webkit-font-smoothing: antialiased;
+  }
+  .mono { font-family: ui-monospace, "SF Mono", "Cascadia Code", "Roboto Mono", Menlo, monospace; font-variant-numeric: tabular-nums; }
+  .wrap { max-width: 1180px; margin: 0 auto; padding: 24px 20px 56px; }
+
+  header { display: flex; align-items: flex-start; justify-content: space-between; gap: 16px; margin-bottom: 18px; flex-wrap: wrap; }
+  h1 { font-size: 19px; margin: 0 0 4px; letter-spacing: -0.01em; }
+  .sub { font-size: 12.5px; color: var(--muted); display: flex; align-items: center; gap: 6px; }
+  .sub a { color: var(--accent-text); text-decoration: none; }
+  .sub a:hover { text-decoration: underline; }
+  .live-dot { width: 6px; height: 6px; border-radius: 50%; background: var(--positive); position: relative; flex-shrink: 0; }
+  .live-dot::after {
+    content: ""; position: absolute; inset: -3px; border-radius: 50%; border: 1px solid var(--positive);
+    animation: pulse 2s ease-out infinite;
+  }
+  @keyframes pulse { 0% { transform: scale(.6); opacity: .8; } 100% { transform: scale(1.8); opacity: 0; } }
+  @media (prefers-reduced-motion: reduce) { .live-dot::after { animation: none; } }
+
+  .tabs { display: flex; gap: 6px; flex-wrap: wrap; margin-bottom: 16px; }
+  .tab {
+    font: inherit; font-size: 12.5px; font-weight: 600; padding: 7px 14px; border-radius: 7px;
+    border: 1px solid var(--border); background: var(--surface); color: var(--text); cursor: pointer;
+  }
+  .tab[aria-selected="true"] { background: var(--accent); border-color: var(--accent); color: #fff; }
+  .tab .n { color: var(--muted); font-weight: 400; }
+  .tab[aria-selected="true"] .n { color: #e0e7ff; }
+
+  .kpis { display: grid; grid-template-columns: repeat(auto-fit, minmax(160px, 1fr)); gap: 10px; margin-bottom: 16px; }
+  .kpi { background: var(--surface); border: 1px solid var(--border); border-radius: 10px; padding: 12px 14px; }
+  .kpi-label { font-size: 10.5px; font-weight: 600; text-transform: uppercase; letter-spacing: .05em; color: var(--faint); margin-bottom: 5px; }
+  .kpi-val { font-size: 15.5px; font-weight: 700; letter-spacing: -0.01em; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+  .kpi-val.positive { color: var(--positive); }
+  .kpi-val.negative { color: var(--negative); }
+  .kpi-sub { font-size: 11px; color: var(--muted); margin-top: 2px; }
+
+  .controls { display: flex; gap: 8px; align-items: center; flex-wrap: wrap; margin-bottom: 12px; }
+  .search {
+    flex: 1; min-width: 180px; font: inherit; font-size: 13px; padding: 8px 12px;
+    border: 1px solid var(--border); border-radius: 8px; background: var(--surface); color: var(--text);
+  }
+  .chip {
+    font: inherit; font-size: 12px; font-weight: 600; padding: 5px 11px; border-radius: 999px;
+    border: 1px solid var(--border); background: var(--surface); color: var(--muted); cursor: pointer;
+  }
+  .chip[aria-pressed="true"] { background: var(--accent-soft); border-color: var(--accent); color: var(--accent-text); }
+
+  table { width: 100%; border-collapse: collapse; background: var(--surface); border: 1px solid var(--border); border-radius: 10px; overflow: hidden; }
+  thead th {
+    text-align: left; font-size: 10.5px; font-weight: 600; text-transform: uppercase; letter-spacing: .04em;
+    color: var(--faint); padding: 9px 12px; border-bottom: 1px solid var(--border); cursor: pointer; user-select: none;
+    white-space: nowrap;
+  }
+  thead th:hover { color: var(--text); }
+  thead th.sorted { color: var(--accent-text); }
+  tbody td { padding: 9px 12px; border-bottom: 1px solid var(--grid-line); font-size: 12.5px; }
+  tbody tr:last-child td { border-bottom: none; }
+  tbody tr { cursor: pointer; }
+  tbody tr:hover td { background: var(--row-hover); }
+  .name-cell { max-width: 320px; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+  .site-badge { font-size: 11px; color: var(--muted); }
+  td.num { text-align: right; }
+  .pct.positive { color: var(--positive); }
+  .pct.negative { color: var(--negative); }
+  .pct.zero { color: var(--faint); }
+  .empty-note { font-size: 12px; color: var(--muted); padding: 30px 0; text-align: center; }
+
+  /* --- Modal --- */
+  .modal-backdrop {
+    display: none; position: fixed; inset: 0; background: rgba(0,0,0,.45); z-index: 50;
+    align-items: center; justify-content: center; padding: 20px;
+  }
+  .modal-backdrop.open { display: flex; }
+  .modal {
+    background: var(--surface); border-radius: 12px; max-width: 640px; width: 100%;
+    padding: 18px 20px 20px; max-height: 85vh; overflow-y: auto;
+  }
+  .modal-head { display: flex; justify-content: space-between; align-items: flex-start; gap: 12px; margin-bottom: 4px; }
+  .modal-title { font-size: 14.5px; font-weight: 700; line-height: 1.35; }
+  .modal-close {
+    font: inherit; font-size: 18px; line-height: 1; background: none; border: none; color: var(--muted);
+    cursor: pointer; padding: 2px 6px; flex-shrink: 0;
+  }
+  .modal-meta { font-size: 12px; color: var(--muted); margin-bottom: 14px; }
+  .modal-meta a { color: var(--accent-text); }
+  .modal-chart-box { height: 260px; position: relative; }
+  .modal-loading { font-size: 12.5px; color: var(--muted); padding: 40px 0; text-align: center; }
+
+  @media (max-width: 640px) {
+    table, thead, tbody, tr, th, td { display: block; }
+    thead { display: none; }
+    tbody tr { border-bottom: 1px solid var(--border); padding: 10px 12px; }
+    tbody td { border: none; padding: 2px 0; }
+    .name-cell { max-width: 100%; white-space: normal; font-weight: 600; }
+    td.num { text-align: left; }
+    td.num::before { content: attr(data-label) ": "; color: var(--muted); }
+  }
+</style>
+</head>
+<body>
+<div class="wrap">
+  <header>
+    <div>
+      <h1>Giá RAM / SSD / Laptop</h1>
+      <div class="sub"><span class="live-dot"></span> Cập nhật lúc __GENERATED_AT__ &middot; <a href="__REPO_URL__">mã nguồn</a></div>
+    </div>
+  </header>
+
+  <div class="tabs" id="tabs"></div>
+  <div class="kpis" id="kpis"></div>
+  <div class="controls">
+    <input class="search" id="search" type="text" placeholder="Tìm theo tên sản phẩm...">
+    <div id="siteChips" style="display:flex;gap:6px;flex-wrap:wrap;"></div>
+  </div>
+
+  <div id="tableWrap"></div>
+</div>
+
+<div class="modal-backdrop" id="modalBackdrop">
+  <div class="modal">
+    <div class="modal-head">
+      <div class="modal-title" id="modalTitle"></div>
+      <button class="modal-close" id="modalClose" aria-label="Đóng">&times;</button>
+    </div>
+    <div class="modal-meta" id="modalMeta"></div>
+    <div class="modal-chart-box" id="modalChartBox"><div class="modal-loading">Đang tải...</div></div>
+  </div>
+</div>
+
+<script>
+const SUMMARY = __SUMMARY_JSON__;
+const CATS = __CATS_JSON__;
+const DATA_BASE = __DATA_BASE__;
+
+const fmtPrice = (v) => v.toLocaleString('vi-VN') + 'đ';
+const fmtPct = (v) => (v > 0 ? '+' : '') + v.toFixed(1) + '%';
+const pctClass = (v) => v > 0 ? 'positive' : v < 0 ? 'negative' : 'zero';
+
+let activeCat = CATS[0][0];
+let activeSites = new Set();
+let sortKey = null, sortDir = 1;
+let searchTerm = '';
+const historyCache = {};
+let modalChart = null;
+
+const tabsEl = document.getElementById('tabs');
+const kpisEl = document.getElementById('kpis');
+const chipsEl = document.getElementById('siteChips');
+const tableWrapEl = document.getElementById('tableWrap');
+const searchEl = document.getElementById('search');
+
+function itemsForCat(catKey) { return SUMMARY.filter(it => it.cat === catKey); }
+
+function renderTabs() {
+  tabsEl.innerHTML = '';
+  CATS.forEach(([key, label]) => {
+    const count = itemsForCat(key).length;
+    if (count === 0) return;
+    const btn = document.createElement('button');
+    btn.className = 'tab'; btn.setAttribute('role', 'tab');
+    btn.setAttribute('aria-selected', key === activeCat ? 'true' : 'false');
+    btn.innerHTML = `${label} <span class="n">${count}</span>`;
+    btn.addEventListener('click', () => { activeCat = key; activeSites = new Set(); sortKey = null; render(); });
+    tabsEl.appendChild(btn);
+  });
+}
+
+function renderKpis(items) {
+  if (items.length === 0) { kpisEl.innerHTML = ''; return; }
+  const withTrend = items.filter(it => it['7d'] !== undefined);
+  let body = `<div class="kpi"><div class="kpi-label">Sản phẩm</div><div class="kpi-val mono">${items.length}</div>
+    <div class="kpi-sub">${new Set(items.map(i=>i.site)).size} nhà bán</div></div>`;
+  if (withTrend.length) {
+    const drop = withTrend.reduce((a,b) => b['7d'] < a['7d'] ? b : a);
+    const rise = withTrend.reduce((a,b) => b['7d'] > a['7d'] ? b : a);
+    body += `<div class="kpi"><div class="kpi-label">Giảm nhiều nhất (7 ngày)</div>
+      <div class="kpi-val positive">${fmtPct(drop['7d'])}</div><div class="kpi-sub">${esc(drop.name)}</div></div>`;
+    body += `<div class="kpi"><div class="kpi-label">Tăng nhiều nhất (7 ngày)</div>
+      <div class="kpi-val negative">${fmtPct(rise['7d'])}</div><div class="kpi-sub">${esc(rise.name)}</div></div>`;
+  }
+  kpisEl.innerHTML = body;
+}
+
+function renderChips(items) {
+  const sites = [...new Map(items.map(it => [it.site, it.site_label])).entries()];
+  chipsEl.innerHTML = '';
+  sites.forEach(([site, label]) => {
+    const btn = document.createElement('button');
+    btn.className = 'chip'; btn.textContent = label;
+    btn.setAttribute('aria-pressed', activeSites.has(site) ? 'true' : 'false');
+    btn.addEventListener('click', () => {
+      if (activeSites.has(site)) activeSites.delete(site); else activeSites.add(site);
+      render();
+    });
+    chipsEl.appendChild(btn);
+  });
+}
+
+function esc(s) { const d = document.createElement('div'); d.textContent = s; return d.innerHTML; }
+
+const COLS = [
+  { key: 'name', label: 'Sản phẩm' },
+  { key: 'site_label', label: 'Nhà bán' },
+  { key: 'price', label: 'Giá', num: true },
+  { key: '7d', label: '7 ngày', num: true },
+  { key: '1m', label: '1 tháng', num: true },
+  { key: '6m', label: '6 tháng', num: true },
+  { key: '1y', label: '1 năm', num: true },
+];
+
+function renderTable(items) {
+  if (items.length === 0) {
+    tableWrapEl.innerHTML = '<div class="empty-note">Không có sản phẩm nào khớp.</div>';
+    return;
+  }
+  let sorted = items.slice();
+  if (sortKey) {
+    sorted.sort((a, b) => {
+      const av = a[sortKey], bv = b[sortKey];
+      const aMissing = av === undefined, bMissing = bv === undefined;
+      if (aMissing && bMissing) return 0;
+      if (aMissing) return 1; if (bMissing) return -1;
+      if (typeof av === 'string') return av.localeCompare(bv) * sortDir;
+      return (av - bv) * sortDir;
+    });
+  }
+  const thead = `<thead><tr>${COLS.map(c =>
+    `<th class="${sortKey===c.key?'sorted':''}" data-key="${c.key}" style="${c.num?'text-align:right':''}">${c.label}${sortKey===c.key ? (sortDir>0?' \u2191':' \u2193') : ''}</th>`
+  ).join('')}</tr></thead>`;
+  const rows = sorted.map(it => {
+    const cells = COLS.map(c => {
+      if (c.key === 'name') return `<td class="name-cell" data-label="${c.label}">${esc(it.name)}</td>`;
+      if (c.key === 'site_label') return `<td data-label="${c.label}"><span class="site-badge">${esc(it.site_label)}</span></td>`;
+      if (c.key === 'price') return `<td class="num mono" data-label="${c.label}">${fmtPrice(it.price)}</td>`;
+      const v = it[c.key];
+      return `<td class="num mono" data-label="${c.label}">${v === undefined ? '\u2014' : `<span class="pct ${pctClass(v)}">${fmtPct(v)}</span>`}</td>`;
+    }).join('');
+    return `<tr data-url="${esc(it.url)}" data-cat="${esc(it.cat)}" data-name="${esc(it.name)}" data-site="${esc(it.site_label)}" data-price="${it.price}">${cells}</tr>`;
+  }).join('');
+  tableWrapEl.innerHTML = `<table>${thead}<tbody>${rows}</tbody></table>`;
+
+  tableWrapEl.querySelectorAll('thead th').forEach(th => {
+    th.addEventListener('click', () => {
+      const key = th.dataset.key;
+      if (sortKey === key) sortDir *= -1; else { sortKey = key; sortDir = key === 'name' || key === 'site_label' ? 1 : -1; }
+      renderTable(currentFiltered());
+    });
+  });
+  tableWrapEl.querySelectorAll('tbody tr').forEach(tr => {
+    tr.addEventListener('click', () => openModal(tr.dataset));
+  });
+}
+
+function currentFiltered() {
+  let items = itemsForCat(activeCat);
+  if (activeSites.size) items = items.filter(it => activeSites.has(it.site));
+  if (searchTerm) {
+    const q = searchTerm.toLowerCase();
+    items = items.filter(it => it.name.toLowerCase().includes(q));
+  }
+  return items;
+}
+
+function render() {
+  renderTabs();
+  const items = currentFiltered();
+  renderKpis(itemsForCat(activeCat));
+  renderChips(itemsForCat(activeCat));
+  renderTable(items);
+}
+
+searchEl.addEventListener('input', () => { searchTerm = searchEl.value; renderTable(currentFiltered()); });
+
+async function openModal(ds) {
+  const backdrop = document.getElementById('modalBackdrop');
+  const box = document.getElementById('modalChartBox');
+  document.getElementById('modalTitle').textContent = ds.name;
+  const metaEl = document.getElementById('modalMeta');
+  metaEl.innerHTML = ds.url
+    ? `${esc(ds.site)} &middot; <a href="${esc(ds.url)}" target="_blank" rel="noopener">Xem sản phẩm \u2192</a>`
+    : esc(ds.site);
+  box.innerHTML = '<div class="modal-loading">Đang tải...</div>';
+  backdrop.classList.add('open');
+  if (modalChart) { modalChart.destroy(); modalChart = null; }
+
+  try {
+    let catData = historyCache[ds.cat];
+    if (!catData) {
+      const res = await fetch(`${DATA_BASE}${ds.cat}.json`);
+      catData = await res.json();
+      historyCache[ds.cat] = catData;
+    }
+    const points = (catData[ds.url] || []).map(([d, p]) => ({ x: d, y: p }));
+    if (points.length < 2) {
+      box.innerHTML = '<div class="modal-loading">Chưa đủ dữ liệu lịch sử cho sản phẩm này.</div>';
+      return;
+    }
+    box.innerHTML = '<canvas></canvas>';
+    const ctx = box.querySelector('canvas');
+    modalChart = new Chart(ctx, {
+      type: 'line',
+      data: { datasets: [{ data: points, borderColor: getComputedStyle(document.documentElement).getPropertyValue('--accent'),
+        borderWidth: 1.8, pointRadius: 0, pointHoverRadius: 4, tension: 0.15 }] },
+      options: {
+        responsive: true, maintainAspectRatio: false,
+        interaction: { mode: 'nearest', intersect: false, axis: 'x' },
+        plugins: {
+          legend: { display: false },
+          tooltip: { callbacks: {
+            title: (items) => new Date(items[0].parsed.x).toLocaleDateString('vi-VN'),
+            label: (item) => fmtPrice(item.parsed.y),
+          } }
+        },
+        scales: {
+          x: { type: 'time', time: { unit: 'day' }, grid: { display: false }, ticks: { maxTicksLimit: 6, font: { size: 10 } } },
+          y: { grid: { color: getComputedStyle(document.documentElement).getPropertyValue('--grid-line') },
+               ticks: { font: { size: 10 }, callback: (v) => v.toLocaleString('vi-VN') } }
+        }
+      }
+    });
+  } catch (e) {
+    box.innerHTML = '<div class="modal-loading">Không tải được dữ liệu.</div>';
+  }
+}
+
+document.getElementById('modalClose').addEventListener('click', () => document.getElementById('modalBackdrop').classList.remove('open'));
+document.getElementById('modalBackdrop').addEventListener('click', (e) => { if (e.target.id === 'modalBackdrop') e.currentTarget.classList.remove('open'); });
+
+render();
+</script>
+</body>
+</html>
+"""
+
+
+def generate_price_dashboard(categories_data, price_history, timestamp):
+    """Writes docs/index.html and docs/dashboard-data/<category>.json: an
+    interactive price-history browser (category tabs, retailer filters,
+    search, a sortable table, click a row for its price chart) hosted via
+    GitHub Pages, with real hover-for-exact-value tooltips via Chart.js.
+
+    Built the same way as the currency-rate-emailer project's dashboard —
+    a real webpage with real JavaScript, since email clients run none and
+    an HTML-image-map alternative (no JS needed) tested correctly in that
+    project's controlled tests but did not work in real Gmail — adapted
+    here for a much larger, less uniform dataset (hundreds of items across
+    8 categories, vs. 13 fixed currencies there). A grid of small charts
+    doesn't scale to hundreds of items, so this is a browsable/searchable
+    table instead, and each item's chart is fetched on demand (that
+    category's JSON chunk) rather than every item's full history being
+    embedded in the page up front — with price history capped at 400 days
+    per item across potentially hundreds of items, embedding everything
+    would make the initial page load heavy for no benefit, since only a
+    handful of items get clicked into per visit.
+
+    Requires GitHub Pages enabled on the repo (Settings > Pages > Deploy
+    from a branch > main > /docs) - something only the repo owner can do,
+    not this script. Returns the path written, or None if there's nothing
+    to show yet.
+    """
+    summary = []
+    history_by_cat = {}
+    for cat in categories_data:
+        cat_key = cat["key"]
+        for item in cat["items"]:
+            key = item_history_key(cat["site"], cat_key, item)
+            hist = price_history.get(key, [])
+            row = {
+                "name": item["name"], "site": cat["site"],
+                "site_label": cat.get("site_label", cat["site"]),
+                "cat": cat_key, "price": _price_to_int(item.get("price", "")),
+                "url": item.get("product_url", ""),
+            }
+            for label, pct in (item.get("trend") or {}).items():
+                short = {"7 ngày": "7d", "1 tháng": "1m", "6 tháng": "6m", "1 năm": "1y"}.get(label)
+                if short:
+                    row[short] = pct
+            summary.append(row)
+            history_by_cat.setdefault(cat_key, {})[key] = [[h["date"], h["price"]] for h in hist]
+
+    if not summary:
+        return None
+
+    os.makedirs("docs/dashboard-data", exist_ok=True)
+    for cat_key, items in history_by_cat.items():
+        with open(f"docs/dashboard-data/{cat_key}.json", "w", encoding="utf-8") as f:
+            json.dump(items, f, ensure_ascii=False)
+
+    cats_json = [[key, TYPE_META.get(key, (key.title(), ""))[0]] for key in TYPE_ORDER if key in history_by_cat]
+    repo_url = f"https://github.com/{os.environ['GITHUB_REPOSITORY']}" if os.environ.get("GITHUB_REPOSITORY") else "#"
+    html = (
+        _PRICE_DASHBOARD_TEMPLATE
+        .replace("__SUMMARY_JSON__", json.dumps(summary, ensure_ascii=False))
+        .replace("__CATS_JSON__", json.dumps(cats_json, ensure_ascii=False))
+        .replace("__DATA_BASE__", json.dumps("dashboard-data/"))
+        .replace("__GENERATED_AT__", timestamp)
+        .replace("__REPO_URL__", repo_url)
+    )
+    with open("docs/index.html", "w", encoding="utf-8") as f:
+        f.write(html)
+    return "docs/index.html"
+
+
 def build_html(categories_data, timestamp):
     # Assign each retailer a stable color, in the order it first appears,
     # regardless of how sections get grouped below.
@@ -1451,6 +1883,17 @@ def build_html(categories_data, timestamp):
             f"</td></tr>"
         )
 
+    _gh_repo = os.environ.get("GITHUB_REPOSITORY")
+    dashboard_link_html = ""
+    if _gh_repo:
+        _pages_owner, _pages_repo = _gh_repo.split("/", 1)
+        dashboard_url = f"https://{_pages_owner}.github.io/{_pages_repo}/"
+        dashboard_link_html = (
+            f'<div style="margin-top:10px;"><a href="{dashboard_url}" '
+            f'style="font-size:12.5px;color:#E0E7FF;font-weight:600;text-decoration:underline;">'
+            f"Xem bảng giá tương tác (lọc, tìm kiếm, biểu đồ theo sản phẩm) \u2192</a></div>"
+        )
+
     return f"""\
 <html>
 <head>
@@ -1469,6 +1912,7 @@ def build_html(categories_data, timestamp):
 <tr><td style="background-color:#4338CA;background-image:linear-gradient(135deg,#4338CA,#6366F1);padding:30px 28px;">
 <div style="font-size:21px;font-weight:700;color:#ffffff;">💻 Bảng giá RAM · SSD · Laptop</div>
 <div style="font-size:13px;color:#E0E7FF;margin-top:6px;">Cập nhật {escape(timestamp)}</div>
+{dashboard_link_html}
 </td></tr>
 {''.join(type_blocks)}
 <tr><td style="padding:22px 28px;background:#f8fafc;border-top:1px solid #eef0f3;margin-top:20px;">
@@ -1691,6 +2135,8 @@ async def _cmd_generate_async():
         os.makedirs("docs", exist_ok=True)
         with open("docs/price_history_latest.csv", "w", newline="", encoding="utf-8") as f:
             f.write(build_history_csv(categories_data))
+
+        generate_price_dashboard(categories_data, price_history, resolve_timestamp()[1])
 
     price_hash = hash_data(
         [

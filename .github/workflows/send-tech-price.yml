@@ -56,12 +56,17 @@ jobs:
         run: python ram_ssd_laptop_price_emailer.py send
 
       - name: Commit price snapshot to main
+        # docs/index.html and docs/dashboard-data/*.json (the interactive
+        # dashboard) are committed alongside the existing CSV snapshot.
+        # nullglob so a run where generate_price_dashboard() had nothing to
+        # write (no items at all) doesn't error on globs matching zero files.
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
+          shopt -s nullglob
           if [ -f docs/price_history_latest.csv ]; then
-            git add docs/price_history_latest.csv
-            git diff --cached --quiet || git commit -m "Update price snapshot [skip ci]"
+            git add docs/price_history_latest.csv docs/*.html docs/dashboard-data/*.json
+            git diff --cached --quiet || git commit -m "Update price snapshot and dashboard [skip ci]"
             git push origin HEAD:main
           fi
 
