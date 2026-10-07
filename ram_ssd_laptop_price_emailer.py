@@ -150,7 +150,7 @@ import smtplib
 import ssl
 import sys
 import unicodedata
-from datetime import datetime, timedelta
+from datetime import datetime, timedelta, timezone
 from email.mime.multipart import MIMEMultipart
 from email.mime.text import MIMEText
 from html import escape
@@ -631,7 +631,7 @@ def load_last_hash(path=STATE_FILE):
 def save_last_hash(price_hash, path=STATE_FILE):
     os.makedirs(os.path.dirname(path) or ".", exist_ok=True)
     with open(path, "w") as f:
-        json.dump({"hash": price_hash, "updated": datetime.utcnow().isoformat() + "Z"}, f)
+        json.dump({"hash": price_hash, "updated": datetime.now(timezone.utc).isoformat().replace("+00:00", "Z")}, f)
 
 
 def hash_data(data):

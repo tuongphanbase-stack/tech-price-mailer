@@ -4,7 +4,7 @@ Emails you a digest of current RAM, SSD, and laptop listing prices across
 several Vietnamese retailers (most with Hanoi showrooms), automatically,
 via GitHub's free scheduled-workflow runners.
 
-Modeled on [gold-price-emailer](https://github.com/tuongphantrue/gold-price-emailer) and [house-price-emailer](https://github.com/tuongphantrue/house-price-emailer) -
+Modeled on [gold-price-emailer](https://github.com/tuongphanbase-stack/gold-price-emailer) and [house-price-emailer](https://github.com/tuongphanbase-stack/house-price-emailer) -
 same generate/send two-phase shape, same Gmail-SMTP delivery, same
 dedup-via-state-branch trick.
 
