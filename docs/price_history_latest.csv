@@ -18,12 +18,12 @@ MemoryZone,SSD,SSD Kingston NV3 1TB M.2 PCIe Gen4 x4 NVMe SNV3S/1000G,3.790.000,
 MemoryZone,SSD,SSD SanDisk Optimus GX 7100 500GB PCIe Gen4 x4 NVMe M.2 SDSP71500GAN-000E0,4.350.000,,,,,https://memoryzone.com.vn/ssd-sandisk-optimus-gx-7100-500gb-pcie-gen4-x4-nvme-m-2-sdsp71500gan-000e0
 MemoryZone,SSD,SSD Western Digital Blue SN5100 1TB PCIe Gen4 x4 NVMe M.2 WDS100T5B0E,4.350.000,,,,,https://memoryzone.com.vn/ssd-western-digital-blue-sn5100-1tb-pcie-gen4-x4-nvme-m-2-wds100t5b0e
 MemoryZone,SSD,SSD WD Black SN7100 1TB PCIe Gen4 x4 NVMe M.2 WDS100T4X0E,4.690.000,+4.2%,+4.2%,,,https://memoryzone.com.vn/ssd-wd-black-sn7100-1tb-pcie-gen4-x4-nvme-m-2-wds100t4x0e
-MemoryZone,SSD,SSD Neo Forza 2TB M.2 PCIe Gen 4.0 x4 NVME NFP4Q5PCI20-44H5200,5.250.000,,,,,https://memoryzone.com.vn/ssd-neo-forza-2tb-m-2-pcie-gen-4-0-x4-nvme-nfp4q5pci20-44h5200
 MemoryZone,SSD,SSD Kioxia Exceria Basic 2TB M.2 PCIe Gen4 x4 BiCS FLASH LSF10Z002TG8,5.850.000,+6.4%,+6.4%,,,https://memoryzone.com.vn/ssd-kioxia-exceria-basic-2tb-m-2-pcie-gen4-x4-bics-flash-lsf10z002tg8
 MemoryZone,SSD,SSD Kioxia (TOSHIBA) Exceria Plus G3 2TB M.2 PCIe Gen4 x4 BiCS FLASH LSD10Z002TG8,5.880.000,,,,,https://memoryzone.com.vn/ssd-kioxia-toshiba-exceria-plus-g3-2tb-m-2-pcie-gen4-x4-bics-flash-lsd10z002tg8
 MemoryZone,SSD,SSD HP FX900 Plus 2TB M.2 PCIe 4.0 x4 NVMe 7F618AA,5.950.000,+0%,+0%,,,https://memoryzone.com.vn/ssd-hp-fx900-plus-2tb-m-2-pcie-4-0-x4-nvme-7f618aa
 MemoryZone,SSD,SSD Acer Predator GM7000 2TB PCIe Gen4 x4 NVMe M.2 GM7000-2TB,7.500.000,+0%,+0%,,,https://memoryzone.com.vn/ssd-acer-predator-gm7000-2tb-pcie-gen4-x4-nvme-m-2-gm7000-2tb
 MemoryZone,SSD,SSD SanDisk Optimus GX 7100 1TB PCIe Gen4 x4 NVMe M.2 SDSP71100TAN-000E0,7.990.000,,,,,https://memoryzone.com.vn/ssd-sandisk-optimus-gx-7100-1tb-pcie-gen4-x4-nvme-m-2-sdsp71100tan-000e0
+MemoryZone,SSD,SSD WD Black SN8100 1TB PCIe Gen5 x4 NVMe M.2 WDS100T1X0M,8.900.000,+0%,+0%,,,https://memoryzone.com.vn/ssd-wd-black-sn8100-1tb-pcie-gen5-x4-nvme-m-2-wds100t1x0m
 MemoryZone,Laptop,"Laptop Lenovo V14 G5 IRL 83HD0062VA (i5-13420H, Intel Graphics, RAM 16GB DDR5, SSD 512GB, 14 Inch IPS FHD 60Hz, NoOS)",22.500.000,,,,,https://memoryzone.com.vn/laptop-lenovo-v14-g5-83hd0062va
 MemoryZone,Laptop,"Laptop Lenovo IdeaPad Slim 3 14IPH11 83UQ000JVN (Ultra 5 322, Intel Graphics, RAM 16GB DDR5, SSD 512GB, 14 Inch IPS WUXGA 60Hz, Win 11 Home)",23.700.000,,,,,https://memoryzone.com.vn/laptop-lenovo-ideapad-slim-3-14iph11-83uq000jvn
 MemoryZone,Laptop,"Laptop ASUS ExpertBook P1 P1403CVA-C5H16-63WS (Core 5 210H, Intel Graphics, RAM 16GB DDR5, SSD 512GB, 14 Inch IPS FHD 60Hz, Win 11 Home)",24.200.000,,,,,https://memoryzone.com.vn/laptop-asus-expertbook-p1-p1403cva-c5h16-63ws
@@ -308,7 +308,7 @@ HACOM (Hà Nội),Màn hình,Màn hình Gigabyte GS25F2A (24.5 inch/FHD/IPS/240H
 HACOM (Hà Nội),Màn hình,Màn hình Gigabyte G25F2A (24.5 inch/FHD/IPS/240hz/1ms/loa),4.599.000,+0%,+0%,,,https://hacom.vn/man-hinh-gigabyte-g25f2a
 HACOM (Hà Nội),Màn hình,Màn hình Gigabyte MO27Q2 (27 inch/QHD/QD-OLED/240Hz/0.03ms/loa),16.299.000,+0%,+0%,,,https://hacom.vn/man-hinh-gigabyte-mo27q2
 HACOM (Hà Nội),Màn hình,Màn hình Asus TUF VG249Q5R (23.8 inch/FHD/IPS/200Hz/0.3ms/loa),3.589.000,+0%,+0%,,,https://hacom.vn/man-hinh-asus-tuf-vg249q5r
-HACOM (Hà Nội),Màn hình,Màn hình ASUS TUF VG279QE5A (27 inch/FHD/IPS/146Hz/1ms/loa),3.999.000,+0%,+0%,,,https://hacom.vn/man-hinh-asus-tuf-vg279qe5a
+HACOM (Hà Nội),Màn hình,Màn hình ASUS VY249HGR (23.8 inch/FHD/IPS/120Hz/1ms),3.299.000,+0%,+0%,,,https://hacom.vn/man-hinh-asus-vy249hgr
 HACOM (Hà Nội),Màn hình,Màn hình LG 24U411A-B (23.8 inch/FHD/IPS/120Hz/1ms),2.999.000,+0%,+0%,,,https://hacom.vn/man-hinh-lg-24u411a-b
 HACOM (Hà Nội),Màn hình,Màn hình HKC MB24V39 (23.8 inch/FHD/IPS/120Hz/4ms),2.499.000,+0%,+0%,,,https://hacom.vn/man-hinh-hkc-mb24v39-120hz
 HACOM (Hà Nội),Màn hình,Màn hình Gigabyte GS24F14 (23.8 inch/FHD/IPS/144hz/1ms),2.999.000,+0%,+0%,,,https://hacom.vn/man-hinh-gigabyte-gs24f14-mogi0063
@@ -319,15 +319,15 @@ HACOM (Hà Nội),Màn hình,Màn hình Gigabyte G34WQC2 (34 inch/WQHD/VA/200hz/
 HACOM (Hà Nội),Màn hình,Màn hình ViewSonic VX3418C-2K (34 inch/UWQHD/VA/180Hz/1ms/loa/cong),8.399.000,+0%,+0%,,,https://hacom.vn/man-hinh-viewsonic-vx3418c-2k
 HACOM (Hà Nội),Màn hình,Màn hình Samsung LS34C500GAEXXV (34 inch/WQHD/VA/100Hz/5ms),7.399.000,+0%,+0%,,,https://hacom.vn/man-hinh-samsung-ls34c500gaexxv
 HACOM (Hà Nội),Màn hình,Màn hình Samsung LC34G55TWWEXXV (34 inch/WQHD/VA/165Hz/1ms),8.499.000,+0%,+0%,,,https://hacom.vn/man-hinh-samsung-lc34g55twwexxv-mosa0233
+HACOM (Hà Nội),Màn hình,Màn hình Dell Ultrasharp U3425WE (34 inch/QHD/IPS/120Hz/5ms/USB-C),25.999.000,+0%,+0%,,,https://hacom.vn/man-hinh-dell-ultrasharp-u3425we
+HACOM (Hà Nội),Màn hình,Màn hình Dell Pro Plus P3425WE (34 inch/WQHD/IPS/100Hz/5ms/USB-C 90W),17.990.000,+0%,+0%,,,https://hacom.vn/man-hinh-dell-pro-plus-p3425we
+HACOM (Hà Nội),Màn hình,Màn hình Asus TUF VG34WQML5A (34 inch/WQHD/VA/250Hz/1ms/loa),9.999.000,+0%,+0%,,,https://hacom.vn/man-hinh-asus-tuf-vg34wqml5a
+HACOM (Hà Nội),Màn hình,Màn hình AOC CU34B3E (34 inch/UWQHD/VA/120Hz/1ms),6.590.000,,,,,https://hacom.vn/man-hinh-aoc-cu34b3e-moao0266
+HACOM (Hà Nội),Màn hình,Màn hình Edra EGM34Q240PR (34 inch/WQHD/VA/240Hz/1ms),7.999.000,+0%,+0%,,,https://hacom.vn/man-hinh-edra-egm34q240pr
 HACOM (Hà Nội),Màn hình,Màn hình thông minh Samsung M7 LS32FM701UEXXV (32 inch/UHD/VA/60Hz/4ms/loa),9.999.000,+0%,+0%,,,https://hacom.vn/man-hinh-thong-minh-samsung-m7-ls32fm701
 HACOM (Hà Nội),Màn hình,Màn hình Samsung ViewFinity LS32B800PXEXXV (32 inch/UHD/IPS/60Hz/5ms),9.999.000,+0%,+0%,,,https://hacom.vn/man-hinh-samsung-viewfinity-ls32b800pxexxv
 HACOM (Hà Nội),Màn hình,Màn hình LG OLED 32GS95UV-B (32 inch/OLED/UHD-240HZ/FHD-480Hz/0.03ms),30.099.000,+0%,+0%,,,https://hacom.vn/man-hinh-lg-ultragear-32gs95uv-b
 HACOM (Hà Nội),Màn hình,Màn hình LG UltraGear 34G600A-B (34 inch/WQHD/VA/160Hz/1ms/cong/loa),9.590.000,+0%,+0%,,,https://hacom.vn/man-hinh-lg-ultragear-34g600a-b-molg0329
-HACOM (Hà Nội),Màn hình,Màn hình thông minh Samsung M5 M50F LS32FM500EEXXV (32 inch/FHD/VA/60Hz/4ms),6.599.000,+0%,+0%,,,https://hacom.vn/man-hinh-thong-minh-samsung-m5-m50f-ls32fm500eexxv-mosa0353
-HACOM (Hà Nội),Màn hình,Màn hình thông minh Samsung M7 LS32FM700UEXXV (32 inch/UHD/VA/60Hz/4ms/loa),9.999.000,+0%,+0%,,,https://hacom.vn/man-hinh-thong-minh-samsung-m7-ls32fm700
-HACOM (Hà Nội),Màn hình,Màn hình ViewSonic VA3209U-4K (32 inch/UHD/IPS/60Hz/4ms),11.999.000,+0%,+0%,,,https://hacom.vn/man-hinh-viewsonic-va3209u-4k-32-inch-uhd-ips-60hz-4ms
-HACOM (Hà Nội),Màn hình,Màn hình thông minh Samsung M9 M90SF LS32FM902SEXXV (32 inch/UHD/QD-OLED/165Hz/0.03ms/loa),40.999.000,+0%,+0%,,,https://hacom.vn/man-hinh-thong-minh-samsung-m9-m90sf-ls32fm902
-HACOM (Hà Nội),Màn hình,Màn hình ASUS ProArt PA329CV (32 inch/UHD/IPS/60Hz/5ms),19.999.000,+0%,+0%,,,https://hacom.vn/man-hinh-asus-proart-pa329cv
 GEARVN,RAM Laptop,Ram Laptop Kingston 32GB 2Rx8 4G x 64-Bit 5600 Mhz CL46 (KVR56S46BD8-32),12.990.000,+0%,+0%,,,https://gearvn.com/products/ram-laptop-kingston-32gb-2rx8-4g-x-64-bit-5600-mhz-cl46-kvr56s46bd8-32
 GEARVN,RAM Laptop,Ram Laptop V-Color DDR4 8GB 3200Mhz TN48G32S822 1Gx8 1Rx8 Sodimm,2.990.000,+0%,+0%,,,https://gearvn.com/products/ram-laptop-v-color-ddr4-8gb-3200mhz-tn48g32s822-1gx8-1rx8-sodimm
 GEARVN,RAM Laptop,Ram Laptop Kingston 8GB CL22 3200 Sodimm (KVR32S22S8/8WP),2.990.000,+0%,+0%,,,https://gearvn.com/products/8gb-ddr4-1x8g-3200-ram-laptop-kingston-8gb-sodimm
@@ -534,8 +534,6 @@ An Phát Computer (Hà Nội),Mainboard,Mainboard MSI B860M Gaming Plus Wifi DDR
 An Phát Computer (Hà Nội),Mainboard,Mainboard Gigabyte B550M H ARGB,4.999.000,+0%,+0%,,,https://www.anphatpc.com.vn/mainboard-gigabyte-b550m-h-argb.html
 An Phát Computer (Hà Nội),Mainboard,Mainboard MSI X870E Gaming Plus Wifi DDR5,9.999.000,,,,,https://www.anphatpc.com.vn/mainboard-msi-x870e-gaming-plus-wifi-ddr5.html
 An Phát Computer (Hà Nội),PSU - Nguồn máy tính,Laptop ASUS Vivobook Go 14 E1404FA-EB935W (AMD Mendocino R5 | AMD Radeon Graphics | 14.0-inch FHD | 16GB | 512GB | Windows 11 | Bạc),18.990.000,-5%,-5%,,,https://www.anphatpc.com.vn/laptop-asus-vivobook-go-14-e1404fa-eb935w.html
-An Phát Computer (Hà Nội),Màn hình,Màn Hình SAMSUNG LS24D300GAEXXV (24 inch - IPS - FHD - 5ms - 100Hz),2.999.000,+0%,+0%,,,https://www.anphatpc.com.vn/man-hinh-samsung-ls24d300gaexxv.html
-An Phát Computer (Hà Nội),Màn hình,Phân giải điểm ảnh: FHD (1920x1080),2.999.000,+0%,+0%,,,
 An Phát Computer (Hà Nội),Màn hình,Màn Hình Đồ Họa SAMSUNG ViewFinity S8 LS27B800PXEXXV (27.0 inch - 4K - IPS - 60Hz - 5ms - USB TypeC - Network RJ45),8.589.000,+0%,+0%,,,https://www.anphatpc.com.vn/man-hinh-may-tinh-samsung-viewfinity-s8-ls27b800pxexxv-27-inch-4k-ips-60hz-usc-c-rj45.html
 An Phát Computer (Hà Nội),Màn hình,Mật độ phân giải: 4K - UHD - 3840 x 2160,8.589.000,+0%,+0%,,,
 An Phát Computer (Hà Nội),Màn hình,Màn Hình ASUS VP227HF (21.45 inch - VA - FHD - 100Hz - 1ms),2.999.000,+0%,+0%,,,https://www.anphatpc.com.vn/man-hinh-asus-vp227hf.html
@@ -544,6 +542,8 @@ An Phát Computer (Hà Nội),Màn hình,Màn Hình Dell SE2725HG (27 inch - IPS
 An Phát Computer (Hà Nội),Màn hình,Phân giải điểm ảnh: 1920 x 1080,4.599.000,+0%,+0%,,,
 An Phát Computer (Hà Nội),Màn hình,Màn Hình MSI PRO MP275 E14L (27 inch - IPS - FHD - 144Hz - 1ms - Speaker),3.999.000,+0%,+0%,,,https://www.anphatpc.com.vn/man-hinh-msi-pro-mp275-e14l.html
 An Phát Computer (Hà Nội),Màn hình,Màn Hình ViewSonic VA2432-H-2 (23.8 inch - IPS - FHD - 100Hz - 1ms),2.499.000,+0%,+0%,,,https://www.anphatpc.com.vn/man-hinh-viewsonic-va2432-h-2.html
+An Phát Computer (Hà Nội),Màn hình,Màn Hình SAMSUNG LS24D300GAEXXV (24 inch - IPS - FHD - 5ms - 100Hz),2.999.000,+0%,+0%,,,https://www.anphatpc.com.vn/man-hinh-samsung-ls24d300gaexxv.html
+An Phát Computer (Hà Nội),Màn hình,Phân giải điểm ảnh: FHD (1920x1080),2.999.000,+0%,+0%,,,
 An Phát Computer (Hà Nội),Màn hình,Màn Hình Đồ Họa ASUS ProArt PA248QFV (24.1 inch - IPS - WUXGA - 100Hz - 5ms - Speaker),6.999.000,+0%,+0%,,,https://www.anphatpc.com.vn/man-hinh-do-hoa-asus-proart-pa248qfv.html
 An Phát Computer (Hà Nội),Màn hình,Màn Hình AOC 27B36XE (27 inch - IPS - FHD - 144Hz - 0.5ms),3.999.000,,,,,https://www.anphatpc.com.vn/man-hinh-aoc-27b36xe.html
 An Phát Computer (Hà Nội),Màn hình,Màn Hình AOC 22B40HM (21.45 inch - VA - FHD - 120Hz - 1ms),2.599.000,,,,,https://www.anphatpc.com.vn/man-hinh-aoc-22b40hm.html
