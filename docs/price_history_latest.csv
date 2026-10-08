@@ -107,6 +107,7 @@ MemoryZone,PSU - Nguồn máy tính,Nguồn máy tính MSI MAG A850GN ATX 3.1 PC
 MemoryZone,PSU - Nguồn máy tính,Nguồn máy tính MSI MAG A850GL PCIE5 850W 80 Plus Gold MAG-A850GL-PCIE5,2.400.000,+0%,+0%,,,https://memoryzone.com.vn/nguon-may-tinh-msi-mag-a850gl-pcie5-850w-80-plus-gold-mag-a850gl-pcie5
 MemoryZone,PSU - Nguồn máy tính,Nguồn máy tính Corsair RM850e ATX 3.1 850W Cybenetics Gold CP-9020296-NA,2.660.000,+0%,+0%,,,https://memoryzone.com.vn/nguon-may-tinh-corsair-rm850e-atx-3-1-850w-cybenetics-gold-cp-9020296-na
 MemoryZone,PSU - Nguồn máy tính,Nguồn máy tính Corsair RM850e White ATX 3.1 850W Cybenetics Gold CP-9020293-NA,2.850.000,+0%,+0%,,,https://memoryzone.com.vn/nguon-may-tinh-corsair-rm850e-white-atx-3-1-850w-cybenetics-gold-cp-9020293-na
+MemoryZone,PSU - Nguồn máy tính,Nguồn máy tính MSI MAG A1000GL PCIE5 1000W 80 Plus Gold MAG-A1000GL-PCIE5,3.350.000,+0%,+0%,,,https://memoryzone.com.vn/nguon-may-tinh-msi-mag-a1000gl-pcie5-1000w-80-plus-gold-mag-a1000gl-pcie5
 MemoryZone,PSU - Nguồn máy tính,Nguồn máy tính MSI PRO A1000PL PCIE5 1000W 80 Plus Platinum PRO-A1000PL-PCIE5,3.650.000,,,,,https://memoryzone.com.vn/nguon-may-tinh-msi-pro-a1000pl-pcie5-1000w-80-plus-platinum-pro-a1000pl-pcie5
 MemoryZone,PSU - Nguồn máy tính,Nguồn máy tính Corsair RM1000e 1000W ATX 3.1 Cybenetics Gold CP-9020297-NA,3.650.000,+0%,+0%,,,https://memoryzone.com.vn/nguon-may-tinh-corsair-rm1000e-atx-3-1-cybenetics-gold-cp-9020297-na
 MemoryZone,PSU - Nguồn máy tính,Nguồn máy tính SuperFlower ZILLION SFX 850W ATX 3.1 80 Plus Gold SF-850Z92SFG,3.690.000,+0%,+0%,,,https://memoryzone.com.vn/nguon-may-tinh-superflower-zillion-sfx-850w-atx-3-1-80-plus-gold-sf-850z92sfg
@@ -115,7 +116,6 @@ MemoryZone,PSU - Nguồn máy tính,Nguồn máy tính Corsair RM1200e 1200W ATX
 MemoryZone,PSU - Nguồn máy tính,Nguồn máy tính SuperFlower Leadex VII XG 1000W ATX 3.1 White 80 Plus Gold SF-1000F14XG-WH,4.490.000,+0%,+0%,,,https://memoryzone.com.vn/nguon-may-tinh-superflower-leadex-vii-xg-1000w-atx3-1-white-80-plus-gold-sf-1000f14xg
 MemoryZone,PSU - Nguồn máy tính,Nguồn máy tính Corsair RM1000x Shift 2025 ATX 3.1 1000W 80 Plus Gold CP-9020300-NA,4.590.000,,,,,https://memoryzone.com.vn/nguon-may-tinh-corsair-rm1000x-shift-2025-atx-3-1-1000w-80-plus-gold-cp-9020300-na
 MemoryZone,PSU - Nguồn máy tính,Nguồn máy tính MSI MAG A1200PLS PCIE5 1200W 80 Plus Titanium MAG-A1200PLS-PCIE5,4.900.000,+0%,+0%,,,https://memoryzone.com.vn/nguon-may-tinh-msi-mag-a1200pls-pcie5-1200w-80-plus-titanium-mag-a1200pls-pcie5
-MemoryZone,PSU - Nguồn máy tính,Nguồn máy tính Corsair RM1000x Shift White 1000W 80 Plus Gold CP-9020275-NA,4.900.000,+0%,+0%,,,https://memoryzone.com.vn/nguon-may-tinh-corsair-rm1000x-shift-white-1000w-80-plus-gold-cp-9020275-na
 MemoryZone,Màn hình,Màn hình MSI PRO MP225 E12VL VA 21.45 inch FHD 120Hz,1.530.000,+0%,+0%,,,https://memoryzone.com.vn/man-hinh-msi-pro-mp225-e12vl-va-21-45-inch-fhd-120hz
 MemoryZone,Màn hình,Màn hình MSI PRO MP243L E14 IPS 24 inch FHD 144Hz HDR,2.050.000,+0%,+0%,,,https://memoryzone.com.vn/man-hinh-msi-pro-mp243l-e14-ips-24-inch-fhd-144hz-hdr
 MemoryZone,Màn hình,Màn hình MSI PRO MP273L E14 IPS 27 inch FHD 144Hz HDR,2.450.000,-1.6%,-1.6%,,,https://memoryzone.com.vn/man-hinh-msi-pro-mp273l-e14-ips-27-inch-fhd-144hz-hdr
@@ -324,10 +324,10 @@ HACOM (Hà Nội),Màn hình,Màn hình Dell Pro Plus P3425WE (34 inch/WQHD/IPS/
 HACOM (Hà Nội),Màn hình,Màn hình Asus TUF VG34WQML5A (34 inch/WQHD/VA/250Hz/1ms/loa),9.999.000,+0%,+0%,,,https://hacom.vn/man-hinh-asus-tuf-vg34wqml5a
 HACOM (Hà Nội),Màn hình,Màn hình AOC CU34B3E (34 inch/UWQHD/VA/120Hz/1ms),6.590.000,,,,,https://hacom.vn/man-hinh-aoc-cu34b3e-moao0266
 HACOM (Hà Nội),Màn hình,Màn hình Edra EGM34Q240PR (34 inch/WQHD/VA/240Hz/1ms),7.999.000,+0%,+0%,,,https://hacom.vn/man-hinh-edra-egm34q240pr
-HACOM (Hà Nội),Màn hình,Màn hình thông minh Samsung M7 LS32FM701UEXXV (32 inch/UHD/VA/60Hz/4ms/loa),9.999.000,+0%,+0%,,,https://hacom.vn/man-hinh-thong-minh-samsung-m7-ls32fm701
-HACOM (Hà Nội),Màn hình,Màn hình Samsung ViewFinity LS32B800PXEXXV (32 inch/UHD/IPS/60Hz/5ms),9.999.000,+0%,+0%,,,https://hacom.vn/man-hinh-samsung-viewfinity-ls32b800pxexxv
-HACOM (Hà Nội),Màn hình,Màn hình LG OLED 32GS95UV-B (32 inch/OLED/UHD-240HZ/FHD-480Hz/0.03ms),30.099.000,+0%,+0%,,,https://hacom.vn/man-hinh-lg-ultragear-32gs95uv-b
-HACOM (Hà Nội),Màn hình,Màn hình LG UltraGear 34G600A-B (34 inch/WQHD/VA/160Hz/1ms/cong/loa),9.590.000,+0%,+0%,,,https://hacom.vn/man-hinh-lg-ultragear-34g600a-b-molg0329
+HACOM (Hà Nội),Màn hình,Màn hình thông minh Samsung M7 LS32FM700UEXXV (32 inch/UHD/VA/60Hz/4ms/loa),9.999.000,+0%,+0%,,,https://hacom.vn/man-hinh-thong-minh-samsung-m7-ls32fm700
+HACOM (Hà Nội),Màn hình,Màn hình ViewSonic VA3209U-4K (32 inch/UHD/IPS/60Hz/4ms),11.999.000,+0%,+0%,,,https://hacom.vn/man-hinh-viewsonic-va3209u-4k-32-inch-uhd-ips-60hz-4ms
+HACOM (Hà Nội),Màn hình,Màn hình thông minh Samsung M9 M90SF LS32FM902SEXXV (32 inch/UHD/QD-OLED/165Hz/0.03ms/loa),40.999.000,+0%,+0%,,,https://hacom.vn/man-hinh-thong-minh-samsung-m9-m90sf-ls32fm902
+HACOM (Hà Nội),Màn hình,Màn hình ASUS ProArt PA329CV (32 inch/UHD/IPS/60Hz/5ms),19.999.000,+0%,+0%,,,https://hacom.vn/man-hinh-asus-proart-pa329cv
 GEARVN,RAM Laptop,Ram Laptop Kingston 32GB 2Rx8 4G x 64-Bit 5600 Mhz CL46 (KVR56S46BD8-32),12.990.000,+0%,+0%,,,https://gearvn.com/products/ram-laptop-kingston-32gb-2rx8-4g-x-64-bit-5600-mhz-cl46-kvr56s46bd8-32
 GEARVN,RAM Laptop,Ram Laptop V-Color DDR4 8GB 3200Mhz TN48G32S822 1Gx8 1Rx8 Sodimm,2.990.000,+0%,+0%,,,https://gearvn.com/products/ram-laptop-v-color-ddr4-8gb-3200mhz-tn48g32s822-1gx8-1rx8-sodimm
 GEARVN,RAM Laptop,Ram Laptop Kingston 8GB CL22 3200 Sodimm (KVR32S22S8/8WP),2.990.000,+0%,+0%,,,https://gearvn.com/products/8gb-ddr4-1x8g-3200-ram-laptop-kingston-8gb-sodimm
@@ -534,8 +534,6 @@ An Phát Computer (Hà Nội),Mainboard,Mainboard MSI B860M Gaming Plus Wifi DDR
 An Phát Computer (Hà Nội),Mainboard,Mainboard Gigabyte B550M H ARGB,4.999.000,+0%,+0%,,,https://www.anphatpc.com.vn/mainboard-gigabyte-b550m-h-argb.html
 An Phát Computer (Hà Nội),Mainboard,Mainboard MSI X870E Gaming Plus Wifi DDR5,9.999.000,,,,,https://www.anphatpc.com.vn/mainboard-msi-x870e-gaming-plus-wifi-ddr5.html
 An Phát Computer (Hà Nội),PSU - Nguồn máy tính,Laptop ASUS Vivobook Go 14 E1404FA-EB935W (AMD Mendocino R5 | AMD Radeon Graphics | 14.0-inch FHD | 16GB | 512GB | Windows 11 | Bạc),18.990.000,-5%,-5%,,,https://www.anphatpc.com.vn/laptop-asus-vivobook-go-14-e1404fa-eb935w.html
-An Phát Computer (Hà Nội),Màn hình,Màn Hình SAMSUNG LS24D300GAEXXV (24 inch - IPS - FHD - 5ms - 100Hz),2.999.000,+0%,+0%,,,https://www.anphatpc.com.vn/man-hinh-samsung-ls24d300gaexxv.html
-An Phát Computer (Hà Nội),Màn hình,Phân giải điểm ảnh: FHD (1920x1080),2.999.000,+0%,+0%,,,
 An Phát Computer (Hà Nội),Màn hình,Màn Hình Đồ Họa SAMSUNG ViewFinity S8 LS27B800PXEXXV (27.0 inch - 4K - IPS - 60Hz - 5ms - USB TypeC - Network RJ45),8.589.000,+0%,+0%,,,https://www.anphatpc.com.vn/man-hinh-may-tinh-samsung-viewfinity-s8-ls27b800pxexxv-27-inch-4k-ips-60hz-usc-c-rj45.html
 An Phát Computer (Hà Nội),Màn hình,Mật độ phân giải: 4K - UHD - 3840 x 2160,8.589.000,+0%,+0%,,,
 An Phát Computer (Hà Nội),Màn hình,Màn Hình ASUS VP227HF (21.45 inch - VA - FHD - 100Hz - 1ms),2.999.000,+0%,+0%,,,https://www.anphatpc.com.vn/man-hinh-asus-vp227hf.html
@@ -544,6 +542,8 @@ An Phát Computer (Hà Nội),Màn hình,Màn Hình Dell SE2725HG (27 inch - IPS
 An Phát Computer (Hà Nội),Màn hình,Phân giải điểm ảnh: 1920 x 1080,4.599.000,+0%,+0%,,,
 An Phát Computer (Hà Nội),Màn hình,Màn Hình MSI PRO MP275 E14L (27 inch - IPS - FHD - 144Hz - 1ms - Speaker),3.999.000,+0%,+0%,,,https://www.anphatpc.com.vn/man-hinh-msi-pro-mp275-e14l.html
 An Phát Computer (Hà Nội),Màn hình,Màn Hình ViewSonic VA2432-H-2 (23.8 inch - IPS - FHD - 100Hz - 1ms),2.499.000,+0%,+0%,,,https://www.anphatpc.com.vn/man-hinh-viewsonic-va2432-h-2.html
+An Phát Computer (Hà Nội),Màn hình,Màn Hình SAMSUNG LS24D300GAEXXV (24 inch - IPS - FHD - 5ms - 100Hz),2.999.000,+0%,+0%,,,https://www.anphatpc.com.vn/man-hinh-samsung-ls24d300gaexxv.html
+An Phát Computer (Hà Nội),Màn hình,Phân giải điểm ảnh: FHD (1920x1080),2.999.000,+0%,+0%,,,
 An Phát Computer (Hà Nội),Màn hình,Màn Hình Đồ Họa ASUS ProArt PA248QFV (24.1 inch - IPS - WUXGA - 100Hz - 5ms - Speaker),6.999.000,+0%,+0%,,,https://www.anphatpc.com.vn/man-hinh-do-hoa-asus-proart-pa248qfv.html
 An Phát Computer (Hà Nội),Màn hình,Màn Hình AOC 27B36XE (27 inch - IPS - FHD - 144Hz - 0.5ms),3.999.000,,,,,https://www.anphatpc.com.vn/man-hinh-aoc-27b36xe.html
 An Phát Computer (Hà Nội),Màn hình,Màn Hình AOC 22B40HM (21.45 inch - VA - FHD - 120Hz - 1ms),2.599.000,,,,,https://www.anphatpc.com.vn/man-hinh-aoc-22b40hm.html
