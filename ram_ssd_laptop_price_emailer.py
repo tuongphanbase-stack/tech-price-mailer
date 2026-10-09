@@ -383,18 +383,18 @@ TREND_WINDOWS = [("7 ngày", 7), ("1 tháng", 30), ("6 tháng", 180), ("1 năm",
 HISTORY_MAX_AGE_DAYS = 400
 SEND_ONLY_ON_CHANGE = os.environ.get("SEND_ONLY_ON_CHANGE", "false").lower() == "true"
 ALLOW_INSECURE_SSL_FALLBACK = os.environ.get("ALLOW_INSECURE_SSL_FALLBACK", "false").lower() == "true"
-MAX_ITEMS_PER_CATEGORY = int(os.environ.get("MAX_ITEMS_PER_CATEGORY", "24"))
+MAX_ITEMS_PER_CATEGORY = int(os.environ.get("MAX_ITEMS_PER_CATEGORY") or "24")
 # How long to let a headless-browser page (HACOM/Phong Vu) finish loading +
 # running its client-side product-fetch JS before giving up on that
 # category. These pages are slower than a plain HTTP GET, so this is
 # generous by design.
-BROWSER_TIMEOUT_MS = int(os.environ.get("BROWSER_TIMEOUT_MS", "45000"))
+BROWSER_TIMEOUT_MS = int(os.environ.get("BROWSER_TIMEOUT_MS") or "45000")
 # How many browser-rendered categories to fetch concurrently. Higher is
 # faster wall-clock time but uses more memory (each concurrent page is a
 # real Chromium tab) - 5 is a reasonable default for a GitHub Actions
 # runner's usual 2-core/7GB spec. Plain-HTTP categories (MemoryZone)
 # aren't limited by this - they're cheap enough not to need it.
-BROWSER_CONCURRENCY = int(os.environ.get("BROWSER_CONCURRENCY", "5"))
+BROWSER_CONCURRENCY = int(os.environ.get("BROWSER_CONCURRENCY") or "5")
 
 # Matches Vietnamese-formatted currency like "1.990.000 ₫" (dot as thousands
 # separator). The currency mark varies by site: MemoryZone/HACOM use the
