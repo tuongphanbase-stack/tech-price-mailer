@@ -178,12 +178,13 @@ That's it - from now on it runs automatically on the schedule below.
 Open `.github/workflows/send-tech-price.yml` and edit this line:
 
 ```
-- cron: "*/30 * * * *"
+- cron: "23 */3 * * *"
 ```
 
 Cron format is `minute hour day month weekday`, always in **UTC**.
 
-- `*/30 * * * *` -> every 30 minutes - current setting
+- `23 */3 * * *` -> every 3 hours, at 23 minutes past - current setting
+- `*/30 * * * *` -> every 30 minutes
 - `0 1 * * *` -> once a day at 1am UTC (8am Vietnam, UTC+7)
 - `0 1 * * 1` -> once a week, Monday 1am UTC
 - `0 */6 * * *` -> every 6 hours
