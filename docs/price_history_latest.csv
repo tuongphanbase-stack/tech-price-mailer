@@ -23,7 +23,6 @@ MemoryZone,SSD,SSD Kioxia (TOSHIBA) Exceria Plus G3 2TB M.2 PCIe Gen4 x4 BiCS FL
 MemoryZone,SSD,SSD HP FX900 Plus 2TB M.2 PCIe 4.0 x4 NVMe 7F618AA,5.950.000,,,,,https://memoryzone.com.vn/ssd-hp-fx900-plus-2tb-m-2-pcie-4-0-x4-nvme-7f618aa
 MemoryZone,SSD,SSD Acer Predator GM7000 2TB PCIe Gen4 x4 NVMe M.2 GM7000-2TB,7.500.000,,,,,https://memoryzone.com.vn/ssd-acer-predator-gm7000-2tb-pcie-gen4-x4-nvme-m-2-gm7000-2tb
 MemoryZone,SSD,SSD SanDisk Optimus GX 7100 1TB PCIe Gen4 x4 NVMe M.2 SDSP71100TAN-000E0,7.990.000,,,,,https://memoryzone.com.vn/ssd-sandisk-optimus-gx-7100-1tb-pcie-gen4-x4-nvme-m-2-sdsp71100tan-000e0
-MemoryZone,SSD,SSD Samsung 9100 Pro 1TB PCIe Gen5 x4 NVMe MZ-VAP1T0BW,7.990.000,,,,,https://memoryzone.com.vn/ssd-samsung-9100-pro-1tb-pcie-gen5-x4-nvme-mz-vap1t0bw
 MemoryZone,Laptop,"Laptop Lenovo V14 G5 IRL 83HD0062VA (i5-13420H, Intel Graphics, RAM 16GB DDR5, SSD 512GB, 14 Inch IPS FHD 60Hz, NoOS)",22.500.000,,,,,https://memoryzone.com.vn/laptop-lenovo-v14-g5-83hd0062va
 MemoryZone,Laptop,"Laptop Lenovo IdeaPad Slim 3 14IPH11 83UQ000JVN (Ultra 5 322, Intel Graphics, RAM 16GB DDR5, SSD 512GB, 14 Inch IPS WUXGA 60Hz, Win 11 Home)",23.700.000,,,,,https://memoryzone.com.vn/laptop-lenovo-ideapad-slim-3-14iph11-83uq000jvn
 MemoryZone,Laptop,"Laptop ASUS ExpertBook P1 P1403CVA-C5H16-63WS (Core 5 210H, Intel Graphics, RAM 16GB DDR5, SSD 512GB, 14 Inch IPS FHD 60Hz, Win 11 Home)",24.200.000,,,,,https://memoryzone.com.vn/laptop-asus-expertbook-p1-p1403cva-c5h16-63ws
@@ -136,30 +135,6 @@ MemoryZone,Màn hình,Màn hình Gaming Esport BenQ ZOWIE 24.1 Inch Fast TN 280H
 MemoryZone,Màn hình,Màn hình 4K ASUS ProArt PA279CRV 27 Inch IPS 60Hz PA279CRV,12.650.000,,,,,https://memoryzone.com.vn/man-hinh-4k-asus-proart-27-inch-ips-60hz-pa279crv
 MemoryZone,Màn hình,Màn hình 4K BenQ MA270U IPS 27 Inch UHD Nano Matte 60Hz HDR USB-C Hub,12.900.000,,,,,https://memoryzone.com.vn/man-hinh-4k-benq-ma270u-ips-27-inch-uhd-nano-matte-60hz-hdr-usb-c-hub
 MemoryZone,Màn hình,Màn hình 2K MSI MAG 272QP QD-OLED X24 27 inch WQHD 240Hz HDR,13.990.000,,,,,https://memoryzone.com.vn/man-hinh-2k-msi-mag-272qp-qd-oled-x24-27-inch-wqhd-240hz-hdr
-HACOM (Hà Nội),RAM Laptop,Ram Laptop Kingston (KVR32S22S8/16 / KVR32S22D8/16 / KVR32S22D8/16WP) 16GB (1x16GB) DDR4 3200Mhz,4.990.000,,,,,https://hacom.vn/ram-laptop-kingston-kvr32s22s8-16
-HACOM (Hà Nội),RAM Laptop,RAM Laptop LEXAR (LD5S16G56C46ST-BGS) 16GB (1x16GB) DDR5 5600MHz,7.990.000,,,,,https://hacom.vn/ram-lexar-16gb-ddr5-5600mhz-ld5s16g56c46st-bgs
-HACOM (Hà Nội),RAM Laptop,RAM Laptop KINGSTON (KVR56S46BS6-8) 8GB (1x8GB) DDR5 5600MHz,4.990.000,,,,,https://hacom.vn/ram-kingston-8gb-ddr5-5600mhz-kvr56s46bs6-8
-HACOM (Hà Nội),RAM Laptop,RAM Laptop KINGMAX (KM-SD4-3200-8GS) 8G (1x8GB) DDR4 3200MHz,2.990.000,,,,,https://hacom.vn/ram-kingmax-8g-ddr4-3200mhz-km-sd4-3200-8gs
-HACOM (Hà Nội),RAM Laptop,RAM Laptop Gskill (F4-3200C22S-8GRS) 8GB (1x8GB) DDR4 3200MHz,2.990.000,,,,,https://hacom.vn/ram-gskill-8gb-ddr4-3200mhz-f4-3200c22s-8grs
-HACOM (Hà Nội),RAM Laptop,RAM Laptop Gskill (F4-3200C22S-16GRS) 16GB (1x16GB) DDR4 3200MHz,4.990.000,,,,,https://hacom.vn/ram-gskill-16gb-ddr4-3200mhz-f4-3200c22s-16grs
-HACOM (Hà Nội),RAM Laptop,Ram Laptop Gskill Ripjaws (F5-5600S4040A16GX1-RS) 16G (1x16GB) DDR5 5600MHz,7.990.000,,,,,https://hacom.vn/ram-laptop-gskill-ripjaws-rags0574
-HACOM (Hà Nội),RAM Laptop,RAM Laptop TeamGroup Elite (TED48G3200C22-S01) 8GB (1x8GB) DDR4 3200MHz,2.990.000,,,,,https://hacom.vn/ram-laptop-teamgroup-elite-ratg0051
-HACOM (Hà Nội),RAM Laptop,Ram Laptop Lexar (LD5S08G48C40ST-BGS) 8GB (1x8GB) DDR5 4800Mhz,4.590.000,,,,,https://hacom.vn/ram-laptop-lexar-ralx0036
-HACOM (Hà Nội),RAM Laptop,Ram Laptop Kingston (KVR32S22S6/8 / KVR32S22S8/8 / KVR32S22S8/8WP) 8GB (1x8GB) DDR4 3200MHz,2.990.000,,,,,https://hacom.vn/ram-kingston-8gb-ddr4-3200mhz-kvr32s22s6-8-kvr32s22s8-8
-HACOM (Hà Nội),RAM Laptop,RAM Laptop LEXAR (LD4AS008G-R3200GSST) 8GB (1x8GB) DDR4 3200MHz,2.990.000,,,,,https://hacom.vn/ram-lexar-8gb-ddr4-3200mhz-ld4as008g-r3200gsst
-HACOM (Hà Nội),RAM Laptop,RAM Laptop Kingston (KVR56S46BS8-16/KVR56S46BS8-16WP) 16GB (1x16GB) DDR5 5600MHz,7.990.000,,,,,https://hacom.vn/ram-kingston-16gb-ddr5-5600mhz-kvr56s46bs8-16
-HACOM (Hà Nội),RAM Laptop,RAM Laptop LEXAR (LD5DS016G-B4800GSST) 16GB (1x16GB) DDR5 4800MHz,6.990.000,,,,,https://hacom.vn/ram-lexar-16gb-ddr5-4800mhz-ld5ds016g-b4800gsst
-HACOM (Hà Nội),RAM Laptop,Ram Laptop Transcend (JM3200HSB-8G) 8GB (1x8GB) DDR4 3200MHz,2.990.000,,,,,https://hacom.vn/ram-laptop-transcend-jm3200hsb-8g-8g-1x8gb-ddr4-3200mhz
-HACOM (Hà Nội),RAM Laptop,RAM Laptop KINGSTON (KVR56S46BD8-32) 32GB (1x32GB) DDR5 5600MHz,16.990.000,,,,,https://hacom.vn/ram-kingston-32gb-ddr5-5600mhz-kvr56s46bd8-32
-HACOM (Hà Nội),RAM Laptop,Ram Laptop Adata (AD4S32008G22-SGN) 8GB (1x 8GB) DDR4 3200Mhz,2.990.000,,,,,https://hacom.vn/ram-laptop-adata-ad4s32008g22-sgn-8gb-1x-8gb-ddr4-3200mhz
-HACOM (Hà Nội),RAM Laptop,Ram Laptop Corsair Vengeance (CMSX16GX5M1A5600C48) 16GB (1x16GB) DDR5 5600MHz,5.990.000,,,,,https://hacom.vn/ram-laptop-corsair-vengeance-cmsx16gx5m1a5600c48-16gb-1x16gb-ddr5-5600mhz
-HACOM (Hà Nội),RAM Laptop,RAM Laptop LEXAR (LD4AS016G-B3200GSST) 16GB (1x16GB) DDR4 3200MHz,4.990.000,,,,,https://hacom.vn/ram-lexar-16gb-ddr4-3200mhz-ld4as016g-b3200gsst
-HACOM (Hà Nội),RAM Laptop,Ram Laptop Corsair Vengeance (CMSX8GX4M1A3200C22) 8GB (1x8GB) DDR4 3200MHz,2.990.000,,,,,https://hacom.vn/ram-laptop-corsair-vengeance-cmsx8gx4m1a3200c22-8gb-1x8gb-ddr4-3200mhz
-HACOM (Hà Nội),RAM Laptop,RAM Laptop KINGMAX (KM-SD4-3200-16GRS) 16G (1x16GB) DDR4 3200MHz,4.990.000,,,,,https://hacom.vn/ram-kingmax-16g-ddr4-3200mhz-km-sd4-3200-16grs
-HACOM (Hà Nội),RAM Laptop,Ram Laptop Corsair Vengeance (CMSX16GX4M1A3200C22) 16GB (1x16GB) DDR4 3200MHz,4.990.000,,,,,https://hacom.vn/ram-laptop-corsair-vengeance-cmsx16gx4m1a3200c22-16gb-1x16gb-ddr4-3200mhz
-HACOM (Hà Nội),RAM Laptop,RAM Laptop PNY XLR8 (MN8GSD43200XR-RB) 8GB (1x8GB) DDR4 3200MHz,1.999.000,,,,,https://hacom.vn/ram-pny-xlr8-rgb-8gb-ddr4-3200mhz-mn8gsd43200xr-rb
-HACOM (Hà Nội),RAM Laptop,Ram Laptop Transcend (JM3200HSE-16G) 16GB (1x16GB) DDR4 3200MHz,4.990.000,,,,,https://hacom.vn/ram-laptop-transcend-jm3200hsb-16g-16g-1x16gb-ddr4-3200mhz
-HACOM (Hà Nội),RAM Laptop,Ram Laptop Lexar 4GB DDR4 3200Mhz (KM cho Lap Acer LTAC839),499.000,,,,,https://hacom.vn/ram-laptop-lexar-4gb-ddr4-3200mhz
 HACOM (Hà Nội),SSD,Ổ Cứng SSD KINGSTON SKC600 256GB 2.5 inch SATA III (Đọc 550MB/s - Ghi 500MB/s) - (SKC600/256GB),2.990.000,,,,,https://hacom.vn/o-cung-ssd-kingston-skc600-256gb-2.5-inch-sata-iii
 HACOM (Hà Nội),SSD,Ổ Cứng SSD LEXAR NM620 256GB – M.2 2280 PCIe Gen3 x4 (Đọc 3000MB/s - Ghi 1300MB/s) - (LNM620X256G-RNNNG),1.990.000,,,,,https://hacom.vn/o-cung-ssd-lexar-nm620-256gb-m.2-2280-pcie-gen3-x4
 HACOM (Hà Nội),SSD,Ổ Cứng SSD LEXAR NS100 256GB 2.5 inch SATA III (Đọc 520MB/s - Ghi 450MB/s) - (LNS100-256RB),1.990.000,,,,,https://hacom.vn/o-cung-ssd-lexar-ns100-256gb-2.5-inch-sata-ii
@@ -232,54 +207,6 @@ HACOM (Hà Nội),HDD,"Ổ Cứng HDD SEAGATE IronWolf 8TB 3.5 inch, 7200RPM, SA
 HACOM (Hà Nội),HDD,"Ổ Cứng HDD WD 4TB Purple 3.5 inch, 5400RPM, SATA III, 256MB Cache (WD43PURZ)",6.590.000,,,,,https://hacom.vn/o-cung-hdd-wd-4tb-purple-3.5-inch-5400rpm-sata-iii-256mb-cache
 HACOM (Hà Nội),HDD,Ổ cứng HDD WD Gold (2TB/3.5 inch/SATA 3/128MB Cache/7200RPM) (WD2005FBYZ),4.500.000,,,,,https://hacom.vn/hdd-wd-gold-2tb35sata-3128mb-cache7200rpm-wd2005fbyz
 HACOM (Hà Nội),HDD,"Ổ Cứng HDD SEAGATE BarraCuda 1TB 3.5 inch, 7200RPM, SATA III, 256MB Cache (ST1000DM014)",4.590.000,,,,,https://hacom.vn/o-cung-hdd-seagate-barracuda-1tb-3.5-inch-7200rpm-sata-iii-256mb-cache
-HACOM (Hà Nội),VGA - Card màn hình,Card màn hình Gigabyte RTX 5070 WINDFORCE OC SFF 12G GDDR7 (GV-N5070WF3OC-12GD),27.999.000,,,,,https://hacom.vn/card-man-hinh-gigabyte-rtx-5070-windforce-oc-sff-12g-gddr7-gv-n5070wf3oc-12gd
-HACOM (Hà Nội),VGA - Card màn hình,Card màn hình Gigabyte RTX 5060 WINDFORCE MAX OC 8GB,14.999.000,,,,,https://hacom.vn/card-man-hinh-gigabyte-rtx-5060-windforce-max-oc-8gb-vggi0734
-HACOM (Hà Nội),VGA - Card màn hình,Card màn hình Gigabyte RTX 3050 WINFORCE OC V2-6G,6.599.000,,,,,https://hacom.vn/card-man-hinh-gigabyte-rtx-3050-winforce-oc-v2-6g
-HACOM (Hà Nội),VGA - Card màn hình,Card màn hình Asus ROG ASTRAL RTX 5090 32G GAMING GDDR7 OC,199.999.000,,,,,https://hacom.vn/card-man-hinh-asus-rog-astral-rtx-5090-32g-gaming-gddr7-oc
-HACOM (Hà Nội),VGA - Card màn hình,Card màn hình Asus DUAL-RTX 3050-6G,6.599.000,,,,,https://hacom.vn/card-man-hinh-asus-dual-rtx-3050-6g
-HACOM (Hà Nội),VGA - Card màn hình,Card màn hình Asus DUAL-RTX 3050-O6G,6.599.000,,,,,https://hacom.vn/card-man-hinh-asus-dual-rtx-3050-o6g
-HACOM (Hà Nội),VGA - Card màn hình,Card màn hình Asus DUAL RTX 5060 8G OC GDDR7 (DUAL-RTX5060-O8G),14.999.000,,,,,https://hacom.vn/card-man-hinh-asus-dual-rtx-5060-8g-oc-gddr7-dual-rtx5060-o8g
-HACOM (Hà Nội),VGA - Card màn hình,Card màn hình Asus DUAL RTX 3050-O8G-V2,7.999.000,,,,,https://hacom.vn/card-man-hinh-asus-dual-rtx-3050-o8g-v2
-HACOM (Hà Nội),VGA - Card màn hình,Card màn hình Asus ROG ASTRAL RTX 5080 16G GAMING GDDR7 OC,69.999.000,,,,,https://hacom.vn/card-man-hinh-asus-rog-astral-rtx-5080-o16g-gaming
-HACOM (Hà Nội),VGA - Card màn hình,Card màn hình Asus TUF GAMING RTX 5090 32G GDDR7 OC,189.999.000,,,,,https://hacom.vn/card-man-hinh-asus-tuf-rtx-5090-32g-gddr7-oc
-HACOM (Hà Nội),VGA - Card màn hình,Card màn hình Asus PRIME RTX 5070 12G OC,29.999.000,,,,,https://hacom.vn/card-man-hinh-asus-prime-rtx-5070-12g-oc
-HACOM (Hà Nội),VGA - Card màn hình,Card màn hình Asus ROG STRIX RTX 5070TI 16G GAMING GDDR7 OC,45.999.000,,,,,https://hacom.vn/card-man-hinh-asus-rog-strix-rtx-5070ti-16g-gaming-gddr7-oc
-HACOM (Hà Nội),VGA - Card màn hình,Card màn hình ASUS DUAL GeForce RTX 5050-8G OC GDDR6,10.599.000,,,,,https://hacom.vn/card-man-hinh-asus-dual-geforce-rtx-5050-8g-oc-gddr6
-HACOM (Hà Nội),VGA - Card màn hình,Card màn hình Asus PRIME RX 9070XT-O16G,27.999.000,,,,,https://hacom.vn/card-man-hinh-asus-prime-rx-9070xt-o16g
-HACOM (Hà Nội),VGA - Card màn hình,Card màn hình Asus DUAL RTX 5060 Ti 16G OC,23.999.000,,,,,https://hacom.vn/vga-asus-dual-rtx-5060-ti-16g-oc
-HACOM (Hà Nội),VGA - Card màn hình,Card màn hình Gigabyte RTX 5060 Ti WINDFORCE MAX OC 8GB,16.999.000,,,,,https://hacom.vn/card-man-hinh-gigabyte-rtx-5060-ti-windforce-max-oc-12gb-vggi0735
-HACOM (Hà Nội),VGA - Card màn hình,"Card màn hình MSI RTX 3060 VENTUS 2X OC 12 GB (12GB GDDR6, 192-bit, HDMI +DP, 1x8-pin)",12.999.000,,,,,https://hacom.vn/card-man-hinh-msi-rtx-3060-ventus-2x-oc-12-gb
-HACOM (Hà Nội),VGA - Card màn hình,Card màn hình Asus DUAL-RTX 3060-O12G-V2,11.999.000,,,,,https://hacom.vn/card-man-hinh-asus-dual-rtx-3060-o12g-v2
-HACOM (Hà Nội),VGA - Card màn hình,Card màn hình Gigabyte RX 6500 XT EAGLE-4GD,4.999.000,,,,,https://hacom.vn/card-man-hinh-gigabyte-rx-6500-xt-eagle-4gd
-HACOM (Hà Nội),VGA - Card màn hình,Card màn hình Gigabyte RTX 3060 WINDFORCE OC 12G,11.999.000,,,,,https://hacom.vn/card-man-hinh-gigabyte-rtx-3060-windforce-oc-12g
-HACOM (Hà Nội),VGA - Card màn hình,Card màn hình Asus DUAL-RX 6500 XT-O4G-V2,4.999.000,,,,,https://hacom.vn/card-man-hinh-asus-dual-rx-6500-xt-o4g-v2
-HACOM (Hà Nội),VGA - Card màn hình,Card màn hình MSI RTX 3050 VENTUS 2X 6G OC,6.599.000,,,,,https://hacom.vn/card-man-hinh-msi-rtx-3050-ventus-2x-6g-oc
-HACOM (Hà Nội),VGA - Card màn hình,Card màn hình MSI RTX 3050 VENTUS 2X XS 8G OC,7.999.000,,,,,https://hacom.vn/card-man-hinh-msi-rtx-3050-ventus-2x-xs-8g-oc
-HACOM (Hà Nội),VGA - Card màn hình,Card màn hình Gigabyte RTX 3050 WINDFORCE OC V2 8G,7.999.000,,,,,https://hacom.vn/card-man-hinh-gigabyte-rtx-3050-windforce-oc-v2-8g
-HACOM (Hà Nội),Mainboard,Mainboard ASUS TUF GAMING B760M-PLUS WIFI D4,4.799.000,,,,,https://hacom.vn/mainboard-asus-tuf-gaming-b760m-plus-wifi-d4
-HACOM (Hà Nội),Mainboard,Mainboard ASUS TUF GAMING Z890-PLUS WIFI DDR5,8.999.000,,,,,https://hacom.vn/mainboard-asus-tuf-gaming-z890-plus-wifi-ddr5
-HACOM (Hà Nội),Mainboard,Mainboard Gigabyte B860M GAMING X WIFI 6E,5.899.000,,,,,https://hacom.vn/mainboard-gigabyte-b860m-gaming-x-wifi-6e
-HACOM (Hà Nội),Mainboard,Mainboard ASUS PRIME Z890-P-CSM DDR5,6.599.000,,,,,https://hacom.vn/mainboard-asus-prime-z890-p-csm-mbas0873
-HACOM (Hà Nội),Mainboard,Mainboard ASUS TUF GAMING B760M-PLUS D4,3.999.000,,,,,https://hacom.vn/mainboard-asus-tuf-gaming-b760m-plus-d4
-HACOM (Hà Nội),Mainboard,Mainboard ASUS PRIME B760M-K D4,3.299.000,,,,,https://hacom.vn/mainboard-asus-prime-b760m-k-d4
-HACOM (Hà Nội),Mainboard,"Mainboard ASUS PRIME B550M-A (AMD B550, Socket AM4,m- ATX, 4 khe RAM DRR4)",2.899.000,,,,,https://hacom.vn/mainboard-asus-prime-b550m-a-amd-b550-socket-am4-m-atx-4-khe-ram-drr4
-HACOM (Hà Nội),Mainboard,Mainboard ASUS PRIME H510M-K R2.0,1.999.000,,,,,https://hacom.vn/mainboard-asus-prime-h510m-k-r2.0
-HACOM (Hà Nội),Mainboard,Mainboard ASUS PRIME Z790-P WIFI-CSM DDR5,6.999.000,,,,,https://hacom.vn/mainboard-asus-prime-z790-p-wifi-csm
-HACOM (Hà Nội),Mainboard,Mainboard ASUS TUF GAMING B650M-E WIFI DDR5,5.999.000,,,,,https://hacom.vn/mainboard-asus-tuf-gaming-b650m-e-wifi-ddr5
-HACOM (Hà Nội),Mainboard,Mainboard ASUS PRIME B760M-A D4-CSM,3.999.000,,,,,https://hacom.vn/mainboard-asus-prime-b760m-a-d4-cms
-HACOM (Hà Nội),Mainboard,Mainboard ASUS TUF GAMING X870-PLUS WIFI,8.599.000,,,,,https://hacom.vn/mainboard-asus-tuf-gaming-x870-plus-wifi
-HACOM (Hà Nội),Mainboard,Mainboard ASUS ROG STRIX X870E-E GAMING WIFI,16.299.000,,,,,https://hacom.vn/mainboard-asus-rog-strix-x870e-e-gaming-wifi
-HACOM (Hà Nội),Mainboard,Mainboard ASUS ROG STRIX X870-F GAMING WIFI,13.999.000,,,,,https://hacom.vn/mainboard-asus-rog-strix-x870-f-gaming-wifi
-HACOM (Hà Nội),Mainboard,Mainboard ASUS ROG MAXIMUS Z890 EXTREME DDR5,34.999.000,,,,,https://hacom.vn/mainboard-asus-rog-maximus-z890-extreme-ddr5
-HACOM (Hà Nội),Mainboard,Mainboard ASUS PRIME X870-P-CSM,6.799.000,,,,,https://hacom.vn/mainboard-asus-prime-x870-p-csm
-HACOM (Hà Nội),Mainboard,Mainboard ASUS ROG STRIX Z890-F GAMING WIFI DDR5,14.999.000,,,,,https://hacom.vn/mainboard-asus-rog-strix-z890-f-gaming-wifi-ddr5
-HACOM (Hà Nội),Mainboard,Mainboard ASUS ROG STRIX Z890-E GAMING WIFI DDR5,16.999.000,,,,,https://hacom.vn/mainboard-asus-rog-strix-z890-e-gaming-wifi-ddr5
-HACOM (Hà Nội),Mainboard,Mainboard ASUS ProArt Z890-CREATOR WIFI DDR5,16.799.000,,,,,https://hacom.vn/mainboard-asus-proart-z890-creator-wifi-ddr5
-HACOM (Hà Nội),Mainboard,Mainboard Asus PRIME H610M-K D4,2.399.000,,,,,https://hacom.vn/mainboard-asus-prime-h610m-k-d4
-HACOM (Hà Nội),Mainboard,Mainboard ASUS PRIME H610M-F WIFI D4,2.699.000,,,,,https://hacom.vn/mainboard-asus-prime-h610m-f-wifi-d4-mbas0864
-HACOM (Hà Nội),Mainboard,Mainboard Asus B760M-AYW WIFI D4,3.599.000,,,,,https://hacom.vn/mainboard-asus-b760m-ayw-wifi-d4
-HACOM (Hà Nội),Mainboard,Mainboard Asus B760M-AYW WIFI DDR5,3.799.000,,,,,https://hacom.vn/mainboard-asus-b760m-ayw-wifi-ddr5
-HACOM (Hà Nội),Mainboard,Mainboard Gigabyte X870 AORUS ELITE WIFI7,8.799.000,,,,,https://hacom.vn/mainboard-gigabyte-x870-aorus-elite-wifi7
 HACOM (Hà Nội),PSU - Nguồn máy tính,Nguồn Asus PRIME 750B BLACK ( 80 Plus Bronze),1.999.000,,,,,https://hacom.vn/nguon-asus-prime-750b-black-80-plus-bronze
 HACOM (Hà Nội),PSU - Nguồn máy tính,Nguồn Asus PRIME 650B BLACK ( 80 Plus Bronze),1.699.000,,,,,https://hacom.vn/nguon-asus-prime-650b-black-80-plus-bronze
 HACOM (Hà Nội),PSU - Nguồn máy tính,Nguồn máy tính AIGO VK550 - 500W (Màu Đen),799.000,,,,,https://hacom.vn/nguon-may-tinh-aigo-vk550-550w-mau-den
@@ -315,19 +242,19 @@ HACOM (Hà Nội),Màn hình,Màn hình Gigabyte GS24F14 (23.8 inch/FHD/IPS/144h
 HACOM (Hà Nội),Màn hình,Màn hình ASUS VA249HG (23.8 inch/FHD/IPS/120Hz/1ms),3.299.000,,,,,https://hacom.vn/man-hinh-asus-va249hg
 HACOM (Hà Nội),Màn hình,Màn Hình LG UltraGear 27GX790A (27 inch/QHD/OLED/480Hz/0.03ms),26.990.000,,,,,https://hacom.vn/man-hinh-lg-ultragear-27gx790a
 HACOM (Hà Nội),Màn hình,Màn hình LG UltraGear 34GX90SA-W (34 inch/WQHD/OLED/240Hz/0.03ms/webOS/cong),26.990.000,,,,,https://hacom.vn/man-hinh-ultragear-34gx90sa-w
-HACOM (Hà Nội),Màn hình,Màn hình ViewSonic VG3820C (38 inch/WQHD+/IPS/75Hz/5ms/loa/cong),12.999.000,,,,,https://hacom.vn/man-hinh-viewsonic-vg3820c
-HACOM (Hà Nội),Màn hình,Màn hình Samsung Odyssey G5 G55C LS27CG552EEXXV (27 inch/QHD/VA/165Hz/1ms/cong),5.999.000,,,,,https://hacom.vn/man-hinh-samsung-odyssey-g5-g55c-ls27cg552eexxv
+HACOM (Hà Nội),Màn hình,Màn hình Gigabyte G34WQC2 (34 inch/WQHD/VA/200hz/1ms/loa),8.499.000,,,,,https://hacom.vn/man-hinh-gigabyte-g34wqc2
 HACOM (Hà Nội),Màn hình,Màn hình ViewSonic VX3418C-2K (34 inch/UWQHD/VA/180Hz/1ms/loa/cong),8.399.000,,,,,https://hacom.vn/man-hinh-viewsonic-vx3418c-2k
-HACOM (Hà Nội),Màn hình,Màn hình Samsung Odyssey G8 LS34DG850SEXXV (34 inch/WQHD/OLED/175Hz/0.03ms/Smart/cong),26.999.000,,,,,https://hacom.vn/man-hinh-samsung-odyssey-g8-ls34dg850sexxv
-HACOM (Hà Nội),Màn hình,Màn hình Samsung Odyssey OLED G9 G93SD LS49DG930SEXXV (49 inch/DQHD/OLED/240Hz/0.03ms/cong),39.999.000,,,,,https://hacom.vn/man-hinh-samsung-odyssey-oled-g9-g93sd-ls49dg930sexxv
-HACOM (Hà Nội),Màn hình,Màn hình Samsung Odyssey OLED LS49CG934SEXXV (49 inch/DQHD/OLED/240Hz/0.03ms/cong),31.590.000,,,,,https://hacom.vn/man-hinh-samsung-odyssey-oled-ls49cg934sexxv
-HACOM (Hà Nội),Màn hình,Màn hình Samsung Odyssey G5 G55C LS32CG552EEXXV (32 inch/QHD/VA/165Hz/1ms/cong),7.999.000,,,,,https://hacom.vn/man-hinh-samsung-odyssey-g5-g55c-ls32cg552eexxv
-HACOM (Hà Nội),Màn hình,Màn hình MSI MPG 341CQPX QD-OLED (34 inch/UWQHD/OLED/240Hz/0.03ms/cong),24.990.000,,,,,https://hacom.vn/man-hinh-msi-mpg-341cqpx-qd-oled
-HACOM (Hà Nội),Màn hình,Màn hình Samsung LS24D366GAEXXV (24 inch/FHD/VA/100Hz/4ms/cong),3.099.000,,,,,https://hacom.vn/man-hinh-samsung-ls24d366gaexxv
-HACOM (Hà Nội),Màn hình,Giá đỡ màn hình HyperWork Flexus PA01 (22-38 inch),1.499.000,,,,,https://hacom.vn/gia-do-man-hinh-hyperwork-flexus-pa01
-HACOM (Hà Nội),Màn hình,Giá treo 2 màn hình North Bayou H180 màu xám (17-27inch),999.000,,,,,https://hacom.vn/gia-treo-2-man-hinh-north-bayou-h180-mau-xam-17-27inch
-HACOM (Hà Nội),Màn hình,Giá Treo Màn Hình Edra EMA7304 Màu Trắng (13-34 inch),699.000,,,,,https://hacom.vn/gia-treo-man-hinh-edra-ema7304-trang
-HACOM (Hà Nội),Màn hình,Giá Treo Màn Hình Edra EMA7304 (13-34 inch),699.000,,,,,https://hacom.vn/gia-treo-man-hinh-edra-ema7304
+HACOM (Hà Nội),Màn hình,Màn hình Samsung LS34C500GAEXXV (34 inch/WQHD/VA/100Hz/5ms),7.399.000,,,,,https://hacom.vn/man-hinh-samsung-ls34c500gaexxv
+HACOM (Hà Nội),Màn hình,Màn hình Samsung LC34G55TWWEXXV (34 inch/WQHD/VA/165Hz/1ms),8.499.000,,,,,https://hacom.vn/man-hinh-samsung-lc34g55twwexxv-mosa0233
+HACOM (Hà Nội),Màn hình,Màn hình Dell Ultrasharp U3425WE (34 inch/QHD/IPS/120Hz/5ms/USB-C),25.999.000,,,,,https://hacom.vn/man-hinh-dell-ultrasharp-u3425we
+HACOM (Hà Nội),Màn hình,Màn hình Dell Pro Plus P3425WE (34 inch/WQHD/IPS/100Hz/5ms/USB-C 90W),17.990.000,,,,,https://hacom.vn/man-hinh-dell-pro-plus-p3425we
+HACOM (Hà Nội),Màn hình,Màn hình Asus TUF VG34WQML5A (34 inch/WQHD/VA/250Hz/1ms/loa),9.999.000,,,,,https://hacom.vn/man-hinh-asus-tuf-vg34wqml5a
+HACOM (Hà Nội),Màn hình,Màn hình AOC CU34B3E (34 inch/UWQHD/VA/120Hz/1ms),6.590.000,,,,,https://hacom.vn/man-hinh-aoc-cu34b3e-moao0266
+HACOM (Hà Nội),Màn hình,Màn hình Edra EGM34Q240PR (34 inch/WQHD/VA/240Hz/1ms),7.999.000,,,,,https://hacom.vn/man-hinh-edra-egm34q240pr
+HACOM (Hà Nội),Màn hình,Màn hình thông minh Samsung M7 LS32FM701UEXXV (32 inch/UHD/VA/60Hz/4ms/loa),9.999.000,,,,,https://hacom.vn/man-hinh-thong-minh-samsung-m7-ls32fm701
+HACOM (Hà Nội),Màn hình,Màn hình Samsung ViewFinity LS32B800PXEXXV (32 inch/UHD/IPS/60Hz/5ms),9.999.000,,,,,https://hacom.vn/man-hinh-samsung-viewfinity-ls32b800pxexxv
+HACOM (Hà Nội),Màn hình,Màn hình LG UltraGear 34G600A-B (34 inch/WQHD/VA/160Hz/1ms/cong/loa),9.590.000,,,,,https://hacom.vn/man-hinh-lg-ultragear-34g600a-b-molg0329
+HACOM (Hà Nội),Màn hình,Màn hình thông minh Samsung M5 M50F LS32FM500EEXXV (32 inch/FHD/VA/60Hz/4ms),6.599.000,,,,,https://hacom.vn/man-hinh-thong-minh-samsung-m5-m50f-ls32fm500eexxv-mosa0353
 GEARVN,RAM Laptop,Ram Laptop Kingston 32GB 2Rx8 4G x 64-Bit 5600 Mhz CL46 (KVR56S46BD8-32),12.990.000,,,,,https://gearvn.com/products/ram-laptop-kingston-32gb-2rx8-4g-x-64-bit-5600-mhz-cl46-kvr56s46bd8-32
 GEARVN,RAM Laptop,Ram Laptop V-Color DDR4 8GB 3200Mhz TN48G32S822 1Gx8 1Rx8 Sodimm,2.990.000,,,,,https://gearvn.com/products/ram-laptop-v-color-ddr4-8gb-3200mhz-tn48g32s822-1gx8-1rx8-sodimm
 GEARVN,RAM Laptop,Ram Laptop Kingston 8GB CL22 3200 Sodimm (KVR32S22S8/8WP),2.990.000,,,,,https://gearvn.com/products/8gb-ddr4-1x8g-3200-ram-laptop-kingston-8gb-sodimm
@@ -449,8 +376,10 @@ An Phát Computer (Hà Nội),Laptop,Laptop Acer Aspire Go 14 AG14-72P-563L NX.J
 An Phát Computer (Hà Nội),Laptop,Laptop Acer Aspire Go 14 AI AG14-I71M-50AL NX.W25SV.001 (Intel Core Ultra 5 processor 125H | Intel Arc | 14 inch FHD+ | 16GB | 512GB | Win 11 | Xám),26.990.000,,,,,https://www.anphatpc.com.vn/laptop-acer-aspire-go-14-ai-ag14-i71m-50al-nx.w25sv.001.html
 An Phát Computer (Hà Nội),Laptop,Laptop Lenovo IdeaPad Slim 3 14IWC11 83RQ002PVN (Intel Core 5 320 | Intel Graphics | 14 inch WUXGA IPS | 8GB | 512GB | Win 11 | Xám),22.990.000,,,,,https://www.anphatpc.com.vn/laptop-lenovo-ideapad-slim-3-14iwc11-83rq002pvn.html
 An Phát Computer (Hà Nội),Laptop,Laptop ASUS Vivobook Go 14 E1404FA-EB935W (AMD Mendocino R5 | AMD Radeon Graphics | 14.0-inch FHD | 16GB | 512GB | Windows 11 | Bạc),25.490.000,,,,,https://www.anphatpc.com.vn/laptop-asus-vivobook-go-14-e1404fa-eb935w.html
-An Phát Computer (Hà Nội),Laptop,"Laptop Dell Pro 14 Essential PV14250-71092352 (Core 5 120U | 16GB | 1TB SSD | 14"" FHD+ | Ubuntu)",28.990.000,,,,,https://www.anphatpc.com.vn/laptop-dell-pro-14-essential-pv14250-71092352.html
 An Phát Computer (Hà Nội),Laptop,Laptop HP 15-fd1289TU C2CV8PA (Intel Core Ultra 7 155H | 16GB | 512GB | Intel Arc | 15.6 inch FHD IPS | Win 11 | Bạc),28.990.000,,,,,https://www.anphatpc.com.vn/laptop-hp-15-fd1289tu-c2cv8pa.html
+An Phát Computer (Hà Nội),Laptop,Laptop HP 15-fd0823TU C81NMPA (Intel Core i7-1355U | 16GB | 512GB | Intel Iris Xe | 15.6 inch FHD | Win 11 | Bạc),27.990.000,,,,,https://www.anphatpc.com.vn/laptop-hp-15-fd0823tu-c81nmpa.html
+An Phát Computer (Hà Nội),Laptop,Laptop HP AI 14-hc0028TU D72BJPA (Intel Core Ultra 5 225U | 16GB | 512GB | Intel® Graphics | 14 inch FHD | Win 11 | Bạc),28.990.000,,,,,https://www.anphatpc.com.vn/laptop-hp-ai-14-hc0028tu-d72bjpa.html
+An Phát Computer (Hà Nội),Laptop,"Laptop Dell Pro 14 Essential PV14250-71092352 (Core 5 120U | 16GB | 1TB SSD | 14"" FHD+ | Ubuntu)",28.990.000,,,,,https://www.anphatpc.com.vn/laptop-dell-pro-14-essential-pv14250-71092352.html
 An Phát Computer (Hà Nội),Laptop,Laptop Asus ROG Zephyrus G16 GU606AM-TB032W (Intel Core Ultra 9 386H | RTX 5060 | 16 inch 2.5K OLED 240Hz | 32GB | 1TB | Win 11 | Xám),89.999.000,,,,,https://www.anphatpc.com.vn/laptop-asus-rog-zephyrus-g16-gu606am-tb032w.html
 An Phát Computer (Hà Nội),Laptop,Laptop ASUS ROG Zephyrus G16 GU605CP-QR141W (Intel Core Ultra 7 255H | RTX 5070 8GB GDDR7 | 16-inch 2.5K | 32GB | 512GB | Windows 11 Home | Túi | Xám),83.990.000,,,,,https://www.anphatpc.com.vn/laptop-asus-rog-zephyrus-g16-gu605cp-qr141w.html
 An Phát Computer (Hà Nội),Laptop,Laptop Asus ZenBook A14 UX3407NA-QD254W (Snapdragon X2 Elite X2E-88-100 | 32GB | 1TB | Qualcomm Adreno | 14 inch WUXGA OLED | Win 11 | Xám),54.490.000,,,,,https://www.anphatpc.com.vn/laptop-asus-zenbook-a14-ux3407na-qd254w.html
@@ -460,8 +389,6 @@ An Phát Computer (Hà Nội),Laptop,Laptop ASUS Zenbook 14 UM3406GA-QD075W (AMD
 An Phát Computer (Hà Nội),Laptop,Laptop ASUS Vivobook S14 S3407AA-SF945W (Intel Core Ultra 5 325 | 16GB | 512GB | Intel Arc | 14 WUXGA OLED | Win 11 | Xám),29.290.000,,,,,https://www.anphatpc.com.vn/laptop-asus-vivobook-s14-s3407aa-sf945w.html
 An Phát Computer (Hà Nội),Laptop,Laptop ASUS Vivobook Go 15 E1504FA-BQ340W (Ryzen 5 40 | 16GB | 512GB | AMD Radeon | 15.6 inch FHD | Win 11 | Bạc),22.990.000,,,,,https://www.anphatpc.com.vn/laptop-asus-vivobook-go-15-e1504fa-bq340w.html
 An Phát Computer (Hà Nội),Laptop,Laptop Thunderobot Gaming 911 S (Intel Core i5-13420H Processor | RTX 3050 | 15.6inch FHD | IPS | 144Hz | 16GB | 512GB | Windows 11 Pro | Đen),26.990.000,,,,,https://www.anphatpc.com.vn/laptop-thunderobot-gaming-911-s-rtx3050.html
-An Phát Computer (Hà Nội),Laptop,Laptop Thunderobot T-Book15A (AMD Ryzen 3 - 3200U | AMD Radeon Vega 3 | 15.6 inch | FHD | IPS | LCD | 8 GB | 512GB | Windows 11 Pro | Xám),15.990.000,,,,,https://www.anphatpc.com.vn/laptop-thunderobot-t-book15-a.html
-An Phát Computer (Hà Nội),Laptop,Laptop MSI Modern 16S G3MG-016VN (Intel Core 7 350 | 16GB | 1TB | Intel Graphics | 16 inch FHD + 120Hz | Win 11 | Xám),35.990.000,,,,,https://www.anphatpc.com.vn/laptop-msi-modern-16s-g3mg-016vn.html
 An Phát Computer (Hà Nội),HDD,Ổ cứng WD Caviar Blue 1TB 64MB Cache 5400 RPM (WD10EARZ),4.999.000,,,,,https://www.anphatpc.com.vn/o-cung-wd-caviar-blue-1tb-64mb-cache-5400-rpm-wd10earz.html
 An Phát Computer (Hà Nội),HDD,Ổ cứng Western Digital Caviar Blue 4TB 256MB Cache 5400RPM WD40EZZX,6.999.000,,,,,https://www.anphatpc.com.vn/o-cung-western-digital-caviar-blue-4tb-256mb-cache-5400rpm-wd40ezzx.html
 An Phát Computer (Hà Nội),HDD,Ổ cứng Western Digital Caviar Blue 2TB 64MB Cache 5400rpm ( WD20EARZ),5.999.000,,,,,https://www.anphatpc.com.vn/o-cung-western-digital-caviar-blue-2tb-64mb-cache-5400rpm-wd20earz.html
@@ -486,12 +413,6 @@ An Phát Computer (Hà Nội),HDD,Ổ cứng Seagate Skyhawk 8TB ST8000VX010 SAT
 An Phát Computer (Hà Nội),HDD,Ổ cứng Seagate Ironwolf 10TB NAS SATA 7200rpm 256MB cache (ST10000VN000),16.999.000,,,,,https://www.anphatpc.com.vn/o-cung-seagate-ironwolf-10tb-nas-sata-7200rpm-256mb-cache-st10000vn000.html
 An Phát Computer (Hà Nội),HDD,Ổ cứng Western Digital Enterprise Ultrastar HA340 10TB 7200RPM 512MB- WUS721210BLE6L4,16.999.000,,,,,https://www.anphatpc.com.vn/o-cung-western-digital-enterprise-ultrastar-ha340-10tb-7200rpm-512mb-wus721210ble6l4.html
 An Phát Computer (Hà Nội),HDD,"Ổ cứng HDD NAS Seagate Ironwolf Pro 8TB 3.5"" Sata (ST8000NT001)",12.999.000,,,,,https://www.anphatpc.com.vn/o-cung-hdd-nas-seagate-ironwolf-pro-8tb-3.5-quot-sata-st8000nt001.html
-An Phát Computer (Hà Nội),VGA - Card màn hình,VGA Asus ROG Astral RTX 5080 16GB GDDR7 OC (ROG-ASTRAL-RTX5080-O16G-GAMING),59.999.000,,,,,https://www.anphatpc.com.vn/vga-asus-rog-astral-rtx-5080-16gb-gddr7-oc.html
-An Phát Computer (Hà Nội),VGA - Card màn hình,VGA Asus ROG Astral RTX 5090 32GB GDDR7 OC (ROG-ASTRAL-RTX5090-O32G-GAMING),200.000.000,,,,,https://www.anphatpc.com.vn/vga-asus-rog-astral-rtx-5090-32gb-gddr7-oc.html
-An Phát Computer (Hà Nội),VGA - Card màn hình,VGA ASUS Dual RTX 5060 8GB GDDR7 OC (DUAL-RTX5060-O8G),11.999.000,,,,,https://www.anphatpc.com.vn/vga-asus-dual-rtx-5060-8gb-gddr7-oc-dual-rtx5060-o8g.html
-An Phát Computer (Hà Nội),VGA - Card màn hình,VGA Asus Prime RTX 5070 Ti 16GB GDDR7 (PRIME-RTX5070TI-16G),37.999.000,,,,,https://www.anphatpc.com.vn/vga-asus-prime-rtx-5070-ti-16gb-gddr7.html
-An Phát Computer (Hà Nội),VGA - Card màn hình,VGA ASUS Dual RTX 5060 Ti 8GB GDDR7 OC (DUAL-RTX5060TI-O8G),20.000.000,,,,,https://www.anphatpc.com.vn/vga-asus-dual-rtx-5060-ti-8gb-gddr7-oc-dual-rtx5060ti-o8g.html
-An Phát Computer (Hà Nội),VGA - Card màn hình,VGA ASUS Dual RTX 5060 8GB GDDR7 OC - A (DUAL-RTX5060-O8G-A),19.890.000,,,,,https://www.anphatpc.com.vn/vga-asus-dual-rtx-5060-8gb-gddr7-oc.html
 An Phát Computer (Hà Nội),VGA - Card màn hình,VGA ASUS Prime RTX 5050 8GB GDDR6 OC Edition (PRIME-RTX5050-O8G),9.999.000,,,,,https://www.anphatpc.com.vn/vga-asus-prime-rtx-5050-8gb-gddr6-oc-edition-prime-rtx5050-o8g.html
 An Phát Computer (Hà Nội),VGA - Card màn hình,VGA Asus Dual RX 9060 XT 16GB GDDR6 (DUAL RX9060XT-16G),17.999.000,,,,,https://www.anphatpc.com.vn/vga-asus-dual-rx-9060-xt-16gb-gddr6-dual-rx9060xt-16g.html
 An Phát Computer (Hà Nội),VGA - Card màn hình,VGA Asus DUAL RTX 3050 6GB (DUAL-RTX3050-6G),7.999.000,,,,,https://www.anphatpc.com.vn/vga-asus-dual-rtx-3050-6gb-dual-rtx3050-6g.html
@@ -499,6 +420,12 @@ An Phát Computer (Hà Nội),VGA - Card màn hình,VGA Asus TUF GAMING RTX 5070
 An Phát Computer (Hà Nội),VGA - Card màn hình,VGA Asus TUF GAMING RTX 5090 32GB GDDR7 OC (TUF-RTX5090-O32G-GAMING),199.999.000,,,,,https://www.anphatpc.com.vn/vga-asus-tuf-rtx-5090-32gb-gddr7-oc.html
 An Phát Computer (Hà Nội),VGA - Card màn hình,VGA ASUS Dual RTX 5050 8GB GDDR6 OC Edition (DUAL-RTX5050-O8G),12.199.000,,,,,https://www.anphatpc.com.vn/vga-asus-dual-rtx-5050-8gb-gddr6-oc-edition-dual-rtx5050-o8g.html
 An Phát Computer (Hà Nội),VGA - Card màn hình,VGA ASUS PRIME RTX 5060 Ti 16GB GDDR7 (PRIME-RTX5060TI-16G),21.999.000,,,,,https://www.anphatpc.com.vn/vga-asus-prime-rtx-5060-ti-16gb-gddr7-prime-rtx5060ti-16g.html
+An Phát Computer (Hà Nội),VGA - Card màn hình,VGA Asus ROG Astral RTX 5080 16GB GDDR7 OC (ROG-ASTRAL-RTX5080-O16G-GAMING),59.999.000,,,,,https://www.anphatpc.com.vn/vga-asus-rog-astral-rtx-5080-16gb-gddr7-oc.html
+An Phát Computer (Hà Nội),VGA - Card màn hình,VGA Asus ROG Astral RTX 5090 32GB GDDR7 OC (ROG-ASTRAL-RTX5090-O32G-GAMING),200.000.000,,,,,https://www.anphatpc.com.vn/vga-asus-rog-astral-rtx-5090-32gb-gddr7-oc.html
+An Phát Computer (Hà Nội),VGA - Card màn hình,VGA ASUS Dual RTX 5060 8GB GDDR7 OC (DUAL-RTX5060-O8G),11.999.000,,,,,https://www.anphatpc.com.vn/vga-asus-dual-rtx-5060-8gb-gddr7-oc-dual-rtx5060-o8g.html
+An Phát Computer (Hà Nội),VGA - Card màn hình,VGA Asus Prime RTX 5070 Ti 16GB GDDR7 (PRIME-RTX5070TI-16G),37.999.000,,,,,https://www.anphatpc.com.vn/vga-asus-prime-rtx-5070-ti-16gb-gddr7.html
+An Phát Computer (Hà Nội),VGA - Card màn hình,VGA ASUS Dual RTX 5060 Ti 8GB GDDR7 OC (DUAL-RTX5060TI-O8G),20.000.000,,,,,https://www.anphatpc.com.vn/vga-asus-dual-rtx-5060-ti-8gb-gddr7-oc-dual-rtx5060ti-o8g.html
+An Phát Computer (Hà Nội),VGA - Card màn hình,VGA ASUS Dual RTX 5060 8GB GDDR7 OC - A (DUAL-RTX5060-O8G-A),19.890.000,,,,,https://www.anphatpc.com.vn/vga-asus-dual-rtx-5060-8gb-gddr7-oc.html
 An Phát Computer (Hà Nội),VGA - Card màn hình,VGA Asus DUAL RTX 3050 OC 6GB (DUAL-RTX3050-O6G),7.999.000,,,,,https://www.anphatpc.com.vn/vga-asus-dual-rtx-3050-oc-6gb-dual-rtx3050-o6g.html
 An Phát Computer (Hà Nội),VGA - Card màn hình,VGA Gigabyte Radeon RX 6500 XT EAGLE 4G (GV-R65XTEAGLE-4GD),6.999.000,,,,,https://www.anphatpc.com.vn/vga-gigabyte-radeon-rx-6500-xt-eagle-4g-gv-r65xteagle-4gd.html
 An Phát Computer (Hà Nội),VGA - Card màn hình,VGA Nvidia RTX PRO 6000 96GB Blackwell Workstation Edition 600W,649.000.000,,,,,https://www.anphatpc.com.vn/vga-leadtek-rtx-pro-6000-96gb-blackwell-workstation-edition-600w.html
