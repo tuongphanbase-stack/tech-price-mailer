@@ -150,7 +150,7 @@ import smtplib
 import ssl
 import sys
 import unicodedata
-from datetime import datetime, timedelta, timezone
+from datetime import date, datetime, timedelta, timezone
 from email.mime.multipart import MIMEMultipart
 from email.mime.text import MIMEText
 from html import escape
@@ -378,6 +378,18 @@ STATE_FILE = os.environ.get("STATE_FILE", "state/last_price.json")
 PRICE_HISTORY_FILE = os.environ.get("PRICE_HISTORY_FILE", "state/price_history.json")
 # Trend windows shown in the email, as (label, days-ago).
 TREND_WINDOWS = [("7 ngày", 7), ("1 tháng", 30), ("6 tháng", 180), ("1 năm", 365)]
+# How far (in days, either side) a history point may sit from a window's
+# exact target date and still count as "the price N days ago" - same idea
+# as gold-price-emailer's HISTORY_MATCH_TOLERANCE_DAYS, but scaled per
+# window. Without a bound, a gap in the history (e.g. the workflow paused
+# for weeks) made every window fall back to the same last point before
+# the gap, so "7 ngày" and "1 tháng" showed one identical, misleading
+# figure. 3 days matches gold-price-emailer for the weekly window; the
+# longer windows get proportionally more slack since a few days barely
+# matter over half a year. The ranges never overlap (7+3 < 30-7,
+# 30+7 < 180-20, 180+20 < 365-20), so two windows can't share a point,
+# and 365+20 stays inside HISTORY_MAX_AGE_DAYS below.
+TREND_MATCH_TOLERANCE_DAYS = {"7 ngày": 3, "1 tháng": 7, "6 tháng": 20, "1 năm": 20}
 # Prune history points older than this so the state file doesn't grow
 # forever - a bit past the longest trend window (1 year) is plenty.
 HISTORY_MAX_AGE_DAYS = 400
@@ -435,6 +447,22 @@ JUNK_NAME_RE = re.compile(
     r"chỉ bán build pc|còn hàng|hữu ích\s*\(\d+\)|tặng |quà tặng|khuyến mại|"
     r"mã\s*(sp|sản phẩm)?\s*:\s*\S+|\(tiết kiệm|tiết kiệm\s*\d+\s*%|"
     r"giá (tăng|giảm) dần|\(\d+\s*(đánh giá|sản phẩm)\)|giá (khuyến mãi|niêm yết):?$)",
+    re.IGNORECASE,
+)
+
+# A "Label: value" line from a product card's spec bullet list (e.g. An
+# Phát's "Ổ cứng: 512GB PCIe® 4.0 NVMe™ M.2 SSD" or "Phân giải điểm ảnh:
+# FHD (1920x1080)"), optionally with a leading bullet dash. The last such
+# line before a card's price used to get paired with that price as if it
+# were the product name. Needs the colon right after the label, so real
+# titles that merely start with the same word ("RAM Laptop Kingston...",
+# "Màn hình LG...", "Card màn hình ASUS...") aren't affected.
+SPEC_LABEL_RE = re.compile(
+    r"^[-•*]?\s*(ổ cứng|ssd|hdd|ram|cpu|gpu|vga|card đồ họa|card đồ hoạ|card màn hình|card|"
+    r"màn hình|pin|kích thước(?: hỗ trợ)?|cổng kết nối|kết nối|giao tiếp|"
+    r"(?:mật độ |độ )?phân giải(?: điểm ảnh)?|tấm nền|tần số quét|bộ nhớ|"
+    r"chipset|socket|công suất|tốc độ|vòng quay|bus|tbw|sata\s*\d?|"
+    r"hệ điều hành|trọng lượng|bảo hành)\s*:",
     re.IGNORECASE,
 )
 
@@ -685,11 +713,13 @@ def _price_to_int(price_str):
 
 def update_history_and_get_trends(history, site, cat_key, items, today):
     """
-    For each item: look up trend info (% change vs the closest available
-    price point at or before each of the TREND_WINDOWS) using the
-    *existing* history (i.e. not counting today's own price), attach it
-    as item["trend"], then record today's price into history for future
-    runs. Mutates `history` in place; returns nothing.
+    For each item: look up trend info (% change vs the price point
+    closest to each of the TREND_WINDOWS' target dates, within
+    TREND_MATCH_TOLERANCE_DAYS - no trend for that window if nothing is
+    close enough) using the *existing* history (i.e. not counting today's
+    own price), attach it as item["trend"], then record today's price
+    into history for future runs. Mutates `history` in place; returns
+    nothing.
     """
     today_str = today.isoformat()
     cutoff_str = (today - timedelta(days=HISTORY_MAX_AGE_DAYS)).isoformat()
@@ -702,12 +732,21 @@ def update_history_and_get_trends(history, site, cat_key, items, today):
         trends = {}
         if current is not None:
             for label, days in TREND_WINDOWS:
-                target_str = (today - timedelta(days=days)).isoformat()
-                # Most recent entry at or before the target date - the
-                # closest available reference point for "N days ago".
-                candidates = [e for e in entries if e["date"] <= target_str]
+                target = today - timedelta(days=days)
+                tolerance = TREND_MATCH_TOLERANCE_DAYS[label]
+                # Entry closest to the target date (the earlier one on a
+                # tie), ignoring anything further away than the tolerance -
+                # a point from well outside the window isn't "N days ago".
+                candidates = []
+                for e in entries:
+                    try:
+                        diff = abs((date.fromisoformat(e["date"]) - target).days)
+                    except ValueError:
+                        continue
+                    if diff <= tolerance:
+                        candidates.append((diff, e["date"], e))
                 if candidates:
-                    ref = max(candidates, key=lambda e: e["date"])
+                    ref = min(candidates, key=lambda c: (c[0], c[1]))[2]
                     if ref["price"]:
                         pct = round((current - ref["price"]) / ref["price"] * 100, 1)
                         trends[label] = pct
@@ -1027,9 +1066,21 @@ def parse_listing(html, max_items=MAX_ITEMS_PER_CATEGORY, base_url=""):
         # badge, since enumerating every possible badge text isn't
         # practical.
         too_short_or_long = not (20 <= len(name) <= 150)
-        is_junk = name.lower().startswith(JUNK_NAME_PREFIXES) or JUNK_NAME_RE.match(name) or JS_SYNTAX_RE.search(name)
+        is_junk = (
+            name.lower().startswith(JUNK_NAME_PREFIXES)
+            or JUNK_NAME_RE.match(name)
+            or SPEC_LABEL_RE.match(name)
+            or JS_SYNTAX_RE.search(name)
+        )
+        # Every real product seen on every retailer so far sits inside its
+        # card's <a href="/product-page"> link; every line that was ever
+        # paired with a price *without* one turned out to be a spec bullet
+        # or badge from inside a card ("Ổ cứng: 512GB...", "Kích thước:
+        # 3.5 inch", "Ryzen 5 7535HS") rather than a product, so a line
+        # with no enclosing link isn't a name candidate at all.
+        no_link = not link_urls[i]
 
-        if is_price_line or too_short_or_long or is_junk or name in seen:
+        if is_price_line or too_short_or_long or is_junk or no_link or name in seen:
             i += 1
             continue
 
@@ -1063,6 +1114,7 @@ def parse_listing(html, max_items=MAX_ITEMS_PER_CATEGORY, base_url=""):
             is_junk_j = (
                 line_j.lower().startswith(JUNK_NAME_PREFIXES)
                 or JUNK_NAME_RE.match(line_j)
+                or SPEC_LABEL_RE.match(line_j)
                 or JS_SYNTAX_RE.search(line_j)
             )
             if len(line_j) >= 10 and not is_junk_j:
@@ -1209,10 +1261,11 @@ def _trend_html(item):
     Compact, colored price-trend line: % change vs the closest available
     price point for each of TREND_WINDOWS. Green/down = price dropped
     since then (good for a buyer), red/up = price rose. A window shows
-    "—" instead of a percentage when there isn't yet a price point old
-    enough to compare against (e.g. the workflow hasn't been running for
-    a full year yet) - this is normal in the early days of running this
-    script and fills in on its own as history accumulates, not an error.
+    "—" instead of a percentage when there isn't a price point close
+    enough to that date to compare against (e.g. the workflow hasn't been
+    running for a full year yet, or wasn't running around that date) -
+    this is normal in the early days of running this script and fills in
+    on its own as history accumulates, not an error.
     """
     trend = item.get("trend") or {}
     parts = []

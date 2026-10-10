@@ -224,16 +224,20 @@ Green/down = price dropped since that point, red/up = price rose, gray
 hash above), keyed mainly by each item's product-page URL so it can be
 matched up across runs even as the page's listing order changes. A
 window's percentage only appears once a price point from roughly that far
-back actually exists - so right after setting this up, expect to see "—"
-everywhere, with "7 ngày" filling in after about a week of runs, "1
-tháng" after about a month, and so on. Old points beyond ~400 days are
-pruned automatically so the state file doesn't grow forever.
+back actually exists (within ±3 days for "7 ngày", ±7 for "1 tháng",
+±20 for "6 tháng"/"1 năm") - so right after setting this up, expect to
+see "—" everywhere, with "7 ngày" filling in after about a week of runs,
+"1 tháng" after about a month, and so on. The same goes for a gap in the
+history (e.g. the workflow was paused for a few weeks): a window whose
+date falls in the gap shows "—" rather than comparing against the last
+point before the gap. Old points beyond ~400 days are pruned
+automatically so the state file doesn't grow forever.
 
 A few things worth knowing:
-- Items matched by product URL track cleanly across runs. Items with no
-  product-specific link found (falls back to a `site|category|name` key)
-  are less robust - if the retailer tweaks that exact name text, this
-  script sees it as a "new" item and its trend history resets.
+- Items are matched by product URL, so they track cleanly across runs.
+  A listing line with no product link around it is skipped entirely -
+  every one seen so far was a spec bullet or badge from inside a product
+  card (e.g. "Ổ cứng: 512GB ..."), not a product.
 - This is a comparison against whatever this script happened to scrape
   each day, at a single point in time - it doesn't capture intraday
   price changes or days the workflow didn't run (e.g. if it was paused,
